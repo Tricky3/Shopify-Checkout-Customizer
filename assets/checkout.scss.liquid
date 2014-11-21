@@ -28,9 +28,16 @@
 /* header background color*/			$header-background-color:#0f202f;
 /* header padding */					$header-padding:12px 0;
 /* shop name color */					$shop-name-color:#fff;
-/* $order summary background-color */	$order-summary-background-color:#fff;
-/* $order summary border-color */		$order-summary-border-color:#dadada;
-/* $order summary color */				$order-summary-color:#6d6f71;
+/* order summary background-color */	$order-summary-background-color:#fff;
+/* order summary border-color */		$order-summary-border-color:#dadada;
+/* order summary color */				$order-summary-color:#6d6f71;
+/* footer background-color */			$footer-bg-color:#fff;
+/* footer-padding*/						$footer-padding:1.5em
+/* footer-top-border-color*/			$footer-top-border-color:#e5e5e5;
+/* footer-href-color*/					$footer-href-color:#999;
+/* footer-href-hover-color*/			$footer-href-hover-color:#2486ae;
+/* footer-text-color*/					$footer-text-color:#999;
+/* footer-font-size*/					$footer-font-size:11px;
 
 
 
@@ -425,29 +432,53 @@ td strong{font-weight:500;color:#777}
 }
 
 /*================================= Footer [3.1] ==================================*/
-.footer{padding:1.5em;border-top:1px solid #e5e5e5;background:white;zoom:1}
-.rgba .footer{background:rgba(255,255,255,0.95)}
-.footer:after,.footer:before{content:"";display:table}
-.footer:after{clear:both}
-.no-generatedcontent .footer{overflow:hidden}
-.boxshadow .footer{border-top:none;-webkit-box-shadow:0 -1px rgba(0,0,0,0.1);box-shadow:0 -1px rgba(0,0,0,0.1)}
-.footer a{color:#999}
-.footer:hover a:hover{color:#2a9dcc}
-.footer__copyright{color:#999;-webkit-transition:color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;transition:color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;font-size:11px;margin-bottom:0}
-.footer__nav{margin-bottom:-1.5em;zoom:1}
+.footer{
+	padding:$footer-padding;
+	border-top:1px solid $footer-top-border-color;
+	background:$footer-bg-color;
+}
+.rgba .footer{
+	background:$footer-bg-color;
+}
+.boxshadow .footer{
+	border-top:none;-webkit-box-shadow:0 -1px rgba(0,0,0,0.1);
+}
+.footer a{
+	color:$footer-href-color;
+}
+.footer:hover a:hover{
+	color:$footer-href-hover-color;
+}
+.footer__copyright{
+	color:$footer-text-color;
+	font-size:$footer-font-size;
+	margin-bottom:0
+}
+.footer__nav{margin-bottom:-$footer-padding;}
 .footer__nav:after,.footer__nav:before{content:"";display:table}
 .footer__nav:after{clear:both}
 .no-generatedcontent .footer__nav{overflow:hidden}
 .footer__nav__item{float:left;margin:0 .25em}
 .footer__nav__item:first-child{margin-left:-0.25em}
-.footer__nav__link{display:block;border-bottom:3px solid transparent;padding:.75em .25em 1.5em;margin-bottom:-1.5em;font-size:11px}
-.footer__nav__link.is-active{color:#555;border-color:#2a9dcc;font-weight:bold;padding-bottom:1.65em}
+.footer__nav__link{
+	display:block;
+	border-bottom:3px solid transparent;
+	padding:.75em .25em 1.5em;
+	margin-bottom:-$footer-padding;
+	font-size:$footer-font-size;
+}
+.footer__nav__link.is-active{
+	color:$footer-href-color;
+	border-color:#2a9dcc;
+	font-weight:bold;
+	padding-bottom:1.65em
+}
 .footer:hover .footer__nav__link.is-active{color:#555}
 
 @media all and (min-width: 600px){
-	.footer{padding:1.5em 0}
-	.footer__copyright{font-size:12px;margin-bottom:.5em}
-	.footer__nav__link{padding:.125em .25em 1.75em;margin-bottom:-1.75em;font-size:12px}
+	.footer{padding:$footer-padding 0}
+	.footer__copyright{font-size:$footer-font-size;margin-bottom:.5em}
+	.footer__nav__link{padding:.125em .25em 1.75em;margin-bottom:-1.75em;font-size:$footer-font-size;}
 }
 @media screen and (min-width: 1000px){
 	.footer__nav{float:right}
@@ -945,3 +976,16 @@ table+.call-to-action,.section__blank-slate+.call-to-action{margin-top:1em}
 	.has-modal .modal{position:relative;top:auto;left:auto;bottom:auto;right:auto}
 	.has-modal .policy-body p{font-size:.875em}
 }
+
+
+/* ================ media queries ===================================
+default breakpoints : 
+Mobile (0px and up) – does not require a media query
+Tablet (600px and up)
+Desktop (1000px and up)
+Large Desktop (1100px and up)
+http://docs.shopify.com/manual/configuration/store-customization/page-specific/checkout-page/advanced-customizations#breakpoints */
+
+
+/* START SPECIFIC COMMANDS COHERENT TO THE THEME */
+
