@@ -20,6 +20,7 @@
 /* h1 font-size */						$h5-font-size:{{ settings.h5-font-size }};
 /* heading text transform*/				$heading-text-transform:{{ settings.heading-text-transform }}; /*to dp: make it dropdown*/
 /* heading padding*/					$heading-padding:{{ settings.heading-padding }};
+/* shop tagline */						$shop-desc-color:#ffffff;
 /*==============================FORM VARS ==============================================/*
 /* label color */						$label-color:#777;
 /* fieldset border color */				$fieldset-border-color:#d8d8d8;
@@ -403,22 +404,44 @@ td strong{font-weight:500;color:#777}
 	background-position:center center;background-repeat:no-repeat
 }
 
-.shop{z-index:1;position:relative;float:left}
+.shop{width: 100%;}
 .shop__name{z-index:2;position:relative;color:$shop-name-color;font-weight:400;-webkit-transition:none;transition:none;}
-.shop__desc{z-index:2;position:relative;color:#fff;line-height:$line-height;color:#606060}
-.rgba .shop__desc{color:rgba(51,51,51,0.7)}
-.shop__logo{display:block;max-width:50%}
-.shop__logo+.shop__desc{margin-top:.35em}
+
+.shop__desc {
+    cursor: default;
+    float: right;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.shop__desc{color:$shop-desc-color;}
+.rgba .shop__desc{color:$shop-desc-color;}
+.shop__logo{float: left;}
+.shop__logo+.shop__desc{margin-top:0}
 
 @media all and (min-width: 600px){
 	.header{padding:$header-padding;}
 	.shop__logo{max-width:200px}
-	.shop__desc{font-weight:300;font-size:17px;font-size:1.2rem}
+	.shop__desc {
+    color: white;
+    cursor: default;
+    float: right;
+    font-size: 0.8em;
+    margin-top: 0;
+    text-transform: uppercase;
+}
 }
 
 @media screen and (min-width: 1000px){
 	.header{padding:$header-padding;}
-	.shop__desc{font-size:20px;font-size:1.4rem}
+	.shop__desc {
+    color: white;
+    cursor: default;
+    float: right;
+    font-size: 0.8em;
+    margin-top: 0;
+    text-transform: uppercase;
+}
 }
 
 

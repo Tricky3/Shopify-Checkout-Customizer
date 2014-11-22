@@ -2,12 +2,59 @@
 
    <legend>Tricky Checkout Settings</legend>
   <span class="note">Configure the new Responsive Checkout of shopify</span>
-
-  <h3 class="heading">Headings <span class="note">(h1, h2, h3, h4, h5, h6)</span></h3>
   <table>
+
+    <tr>
+      <td colspan="6">
+        <h3>Logo</h3>
+      </td>
+    </tr>
+
+    <tr class="horizontal">
+      <th>
+        <label for="checkout_logo">Logo image</label>
+      </th>
+      <td>
+        <select id="checkout_logo" name="checkout_logo">
+          <option value="" selected="">No logo</option>
+          <option value="checkout_logo.png">Custom logo</option>
+          
+        </select>
+      </td>
+    </tr>
+
+    <tr class="horizontal">
+      <th>
+        <label for="checkout_logo.png">Custom checkout logo</label>
+        <small>For best results, we recommend uploading a white logo on a transparent background.</small>
+      </th>
+      <td>
+        <input id="checkout_logo.png" name="checkout_logo.png" type="file"/>
+      </td>
+    </tr>
+
+
+    
+   <tr class="horizontal">
+      <th>
+        <label for="checkout_headline">Tagline</label>
+        <small>Add an explanatory/prompt line on the header</small>
+      </th>
+       <td colspan="5">
+        <input id="checkout_headline" name="checkout_headline"/>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="6">
+  <h3 class="heading">Headings <span class="note">(h1, h2, h3, h4, h5, h6)</span></h3>
+  </td>
+    </tr>
+  
+
     <tr>
       <th><label for="headings-color">Headings Color</label></th>
-      <td><input type="text" id="headings-color" name="headings-color" class="color" value=""/></td>
+       <td colspan="5"><input type="text" id="headings-color" name="headings-color" class="color" value=""/></td>
     </tr>
 
     <tr>
@@ -20,7 +67,7 @@
         </select>
       </td>
       <th><label for="heading-padding">Headings Padding</label></th>
-      <td><input type="text" id="heading-padding" name="heading-padding" value="0 0 10px 0" /></td>
+       <td colspan="3"><input type="text" id="heading-padding" name="heading-padding" value="0 0 10px 0" /></td>
     </tr>
 
     <tr>
@@ -31,6 +78,11 @@
       <th><label for="h5-font-size">h5 + h6 Font Size</label></th>
       <td><input type="text" id="h5-font-size" name="h5-font-size" value="13px" /></td>
     </tr>
+
+
+
 </table>
+
+
 
 </fieldset>
