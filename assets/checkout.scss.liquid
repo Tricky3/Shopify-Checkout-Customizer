@@ -3,21 +3,23 @@
 
 /* Take the Risk to Reinvent */
 
-/*==============================GLOBAL VARS ==============================================/*
+/*==============================GLOBAL VARS ==============================================
+		LEGEND: DEF == variables that come from the default tricky settings
+/*
 /* font-family */						$font-stack:'BasicCommercialW01-Roma', Futura, "Trebuchet MS", Arial, sans-serif;
-/* base font-size */					$base-font-size:{{ settings.font_size }};
-/* Primary Color, used for body text */ $primary-color:{{ settings.color }};
-/* line height */						$line-height:{{ settings.line_height }};
-/* href color, normal status */			$href-normal-color:{{ settings.link_color }};
-/* href color, hover status */			$href-hover-color:{{ settings.link_hovercolor }};
-/* selection background color */		$selection-bg-color:{{ settings.selection_bgcolor }};
+/* DEF - base font-size */				$base-font-size:{{ settings.font_size }};
+/* DEF - Primary Color, body text */ 	$primary-color:{{ settings.color }};
+/* DEF - line height */					$line-height:{{ settings.line_height }};
+/* DEF - href color, normal status */	$href-normal-color:{{ settings.link_color }};
+/* DEF - href color, hover status */	$href-hover-color:{{ settings.link_hovercolor }};
+/* DEF - selection background color */	$selection-bg-color:{{ settings.selection_bgcolor }};
 /* selection color */					$selection-color:#ffffff;
-/* heading color */						$headings-color:#333;
-/* h1 font-size */						$h1-font-size:24px;
-/* h3 font-size */						$h3-font-size:16px;
-/* h1 font-size */						$h5-font-size:12px;
-/* heading text transform*/				$heading-text-transform:uppercase; /*to dp: make it dropdown*/
-/* heading padding*/					$heading-padding:0 0 10px 0;
+/* heading color */						$headings-color:{{ settings.headings-color }};
+/* h1 font-size */						$h1-font-size:{{ settings.h1-font-size }};
+/* h3 font-size */						$h3-font-size:{{ settings.h3-font-size }};
+/* h1 font-size */						$h5-font-size:{{ settings.h5-font-size }};
+/* heading text transform*/				$heading-text-transform:{{ settings.heading-text-transform }}; /*to dp: make it dropdown*/
+/* heading padding*/					$heading-padding:{{ settings.heading-padding }};
 /*==============================FORM VARS ==============================================/*
 /* label color */						$label-color:#777;
 /* fieldset border color */				$fieldset-border-color:#d8d8d8;
@@ -27,11 +29,11 @@
 /* field padding */						$field-padding:1em;
 /* field error background */			$field-error-bg-color:#fff7f7;
 /*==============================BUTTON VARS ==============================================/*
-/* button normal-color */				$btn-normal-color:{{ settings.button_font_color }};
+/* DEF - button normal-color */			$btn-normal-color:{{ settings.button_font_color }};
 /* button font-size */					$btn-font-size:13px;
-/* button normal-bg-color */			$btn-normal-bg-color:{{ settings.button_color }};
-/* button hover */						$btn-hover-color:{{ settings.button_font_hovercolor }}; 
-/* button background hover */			$btn-hover-bg-color:{{ settings.button_hovercolor }}; 
+/* DEF - button normal-bg-color */		$btn-normal-bg-color:{{ settings.button_color }};
+/* DEF - button hover */				$btn-hover-color:{{ settings.button_font_hovercolor }}; 
+/* DEF - button background hover */		$btn-hover-bg-color:{{ settings.button_hovercolor }}; 
 /* button-padding */					$btn-padding:1em;
 /* button focus-bg-color */				$btn-focus-bg-color:#697738;
 /* button focus-color */				$btn-focus-color:#fff;
@@ -992,7 +994,6 @@ table+.call-to-action,.section__blank-slate+.call-to-action{margin-top:1em}
 .section__header:after{clear:both}
 .no-generatedcontent .section__header{overflow:hidden}
 .step--blank .section__header{margin-bottom:0}
-.section__header h3{float:left}
 .step--blank .section__header h3{color:#999}
 .section__header p{color:#999;float:right}
 .section__header .section__edit-link{display:none;float:right;font-size:16px;font-size:1.25rem}

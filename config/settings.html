@@ -1,6 +1,36 @@
 <fieldset data-overrides-fieldset="checkout">
-   <legend>Tricky Checkout Settings</legend>
-  <h3 class="heading">Settings for the Responsive Checkout <span class="note">These settings will work with the new Responsive Checkout </span></h3>
 
+   <legend>Tricky Checkout Settings</legend>
+  <span class="note">Configure the new Responsive Checkout of shopify</span>
+
+  <h3 class="heading">Headings <span class="note">(h1, h2, h3, h4, h5, h6)</span></h3>
+  <table>
+    <tr>
+      <th><label for="headings-color">Headings Color</label></th>
+      <td><input type="text" id="headings-color" name="headings-color" class="color" value=""/></td>
+    </tr>
+
+    <tr>
+      <th><label for="heading-text-transform">Headings Text Transform</label></th>
+      <td><select name="heading-text-transform" id="heading-text-transform">
+          <option value="none">none</option>
+          <option value="uppercase" selected="uppercase">uppercase</option>
+          <option value="lowercase">lowercase</option>
+          <option value="capitalize">capitalize</option>
+        </select>
+      </td>
+      <th><label for="heading-padding">Headings Padding</label></th>
+      <td><input type="text" id="heading-padding" name="heading-padding" value="0 0 10px 0" /></td>
+    </tr>
+
+    <tr>
+      <th><label for="h1-font-size">h1 + h2 font Size</label></th>
+      <td><input type="text" id="h1-font-size" name="h1-font-size" value="24px" /></td>
+      <th><label for="h3-font-size">h3 + h4 Font Size</label></th>
+      <td><input type="text" id="h3-font-size" name="h3-font-size" value="16px" /></td>
+      <th><label for="h5-font-size">h5 + h6 Font Size</label></th>
+      <td><input type="text" id="h5-font-size" name="h5-font-size" value="13px" /></td>
+    </tr>
+</table>
 
 </fieldset>
