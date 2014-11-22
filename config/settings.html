@@ -3,58 +3,73 @@
    <legend>Tricky Checkout Settings</legend>
   <span class="note">Configure the new Responsive Checkout of shopify</span>
   <table>
-
     <tr>
       <td colspan="6">
-        <h3>Logo</h3>
+        <h3 class="heading">Header <span class="note">Uppermost section of the Checkout Page</span></h3>
       </td>
     </tr>
 
     <tr class="horizontal">
       <th>
-        <label for="checkout_logo">Logo image</label>
+        <label for="header-background-color">Header Background Color Fill</label>
+        <small>Background color for the header area</small>
+      </th>
+      <td colspan="2"><input type="text" id="header-background-color" name="header-background-color" class="color" value="#ffffff"/></td>
+      <th>
+        <label for="header-padding">Header Padding Values</label>
+        <small>Individual settings or Shorthand Property<br/><a target="_blank" href="http://www.w3schools.com/css/css_padding.asp">What does this mean?</a> </small>
+      </th>
+      <td colspan="3"><input type="text" id="header-padding" name="header-padding" value="12px 0" /></td>
+    </tr>
+
+    <tr class="horizontal">
+      <th>
+        <label for="checkout_logo">Shop Name</label>
+        <small>Choose between uploading a custom Image or using plain text</small>
       </th>
       <td>
         <select id="checkout_logo" name="checkout_logo">
-          <option value="" selected="">No logo</option>
-          <option value="checkout_logo.png">Custom logo</option>
-          
+          <option value="" selected="">No image, just text</option>
+          <option value="checkout_logo.png">Use a custom image </option>
         </select>
       </td>
-    </tr>
 
-    <tr class="horizontal">
       <th>
-        <label for="checkout_logo.png">Custom checkout logo</label>
-        <small>For best results, we recommend uploading a white logo on a transparent background.</small>
+        <label for="checkout_logo.png">Custom Shop Name Image</label>
+        <small>For best results, we recommend uploading a transparent background image.</small>
       </th>
       <td>
         <input id="checkout_logo.png" name="checkout_logo.png" type="file"/>
       </td>
+
+      <th>
+        <label for="shop-name-color">Shop Name Text Color</label>
+        <small>In the case no image is used for the Shop Logo</small>
+      </th>
+        <td colspan="2"><input type="text" id="shop-name-color" name="shop-name-color" class="color" value="#ffffff"/></td>
     </tr>
 
-
-    
-   <tr class="horizontal">
+    <tr class="horizontal">
       <th>
         <label for="checkout_headline">Tagline</label>
         <small>Add an explanatory/prompt line on the header</small>
       </th>
-       <td colspan="5">
+       <td colspan="1">
         <input id="checkout_headline" name="checkout_headline"/>
       </td>
+      <th><label for="tagline-color">Tagline Color</label></th>
+      <td colspan="3"><input type="text" id="tagline-color" name="tagline-color" class="color" value="#ffffff"/></td>
     </tr>
 
     <tr>
       <td colspan="6">
-  <h3 class="heading">Headings <span class="note">(h1, h2, h3, h4, h5, h6)</span></h3>
-  </td>
+        <h3 class="heading">Headings <span class="note">(h1, h2, h3, h4, h5, h6)</span></h3>
+      </td>
     </tr>
   
-
     <tr>
       <th><label for="headings-color">Headings Color</label></th>
-       <td colspan="5"><input type="text" id="headings-color" name="headings-color" class="color" value=""/></td>
+       <td colspan="5"><input type="text" id="headings-color" name="headings-color" class="color" value="#d8d8d8"/></td>
     </tr>
 
     <tr>
@@ -67,7 +82,7 @@
         </select>
       </td>
       <th><label for="heading-padding">Headings Padding</label></th>
-       <td colspan="3"><input type="text" id="heading-padding" name="heading-padding" value="0 0 10px 0" /></td>
+      <td colspan="3"><input type="text" id="heading-padding" name="heading-padding" value="0 0 10px 0" /></td>
     </tr>
 
     <tr>
@@ -79,6 +94,34 @@
       <td><input type="text" id="h5-font-size" name="h5-font-size" value="13px" /></td>
     </tr>
 
+     <tr>
+      <td colspan="6">
+        <h3 class="heading">Form Settings <span class="note">Style your user Input</span></h3>
+      </td>
+    </tr>
+    
+    <tr>
+      <th><label for="label-color">Label Color</label></th>
+      <td colspan="5"><input type="text" id="label-color" name="label-color" class="color" value="#777"/></td>
+    </tr>
+    
+    <tr>
+      <th><label for="fieldset-bg-color">Fieldset Background Color</label></th>
+      <td colspan="1"><input type="text" id="fieldset-bg-color" name="fieldset-bg-color" class="color" value="#fff"/></td>
+      <th><label for="fieldset-border-color">Fieldset Border Color</label></th>
+      <td colspan="1"><input type="text" id="fieldset-border-color" name="fieldset-border-color" class="color" value="#d8d8d8"/></td>
+      <th><label for="fieldset-border-radius">Fieldset Border Radius</label></th>
+      <td colspan="1"><input type="text" id="fieldset-border-radius" name="fieldset-border-radius" value="0" /></td>
+    </tr>
+
+    <tr>
+      <th><label for="field_focus-color">Field Focus Color</label></th>
+      <td colspan="1"><input type="text" id="field_focus-color" name="field_focus-color" class="color" value="#6d6f71"/></td>
+      <th><label for="field-error-bg-color">Field Error : Background Color</label></th>
+      <td colspan="1"><input type="text" id="field-error-bg-color" name="field-error-bg-color" class="color" value="#fff7f7"/></td>
+      <th><label for="field-padding">Field Padding</label></th>
+      <td colspan="1"><input type="text" id="field-padding" name="field-padding" value="1em" /></td>
+    </tr>
 
 
 </table>
