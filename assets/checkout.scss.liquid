@@ -16,14 +16,26 @@
 /* h1 font-size */						$h1-font-size:24px;
 /* h3 font-size */						$h3-font-size:16px;
 /* h1 font-size */						$h5-font-size:12px;
+/* heading text transform*/				$heading-text-transform:uppercase; /*to dp: make it dropdown*/
+/* heading padding*/					$heading-padding:0 0 10px 0;
 /*==============================FORM VARS ==============================================/*
 /* label color */						$label-color:#777;
 /* fieldset border color */				$fieldset-border-color:#d8d8d8;
-/* fieldset border radius  */			$fieldset-border-radius:0; 
-/* used for other elems too */
+/* fieldset border radius  */			$fieldset-border-radius:0; /* used for other elems as well */
 /* fieldset background color */			$fieldset-bg-color:#fff;
 /* field focus color */					$field_focus-color:#6d6f71;
 /* field padding */						$field-padding:1em;
+/* field error background */			$field-error-bg-color:#fff7f7;
+/*==============================BUTTON VARS ==============================================/*
+/* button normal-color */				$btn-normal-color:#fff;
+/* button font-size */					$btn-font-size:13px;
+/* button normal-bg-color */			$btn-normal-bg-color:#595a55;
+/* button hover */						$btn-hover-color:#fff; 
+/* button background hover */			$btn-hover-bg-color:#0e1f2e; 
+/* button-padding */					$btn-padding:1em;
+/* button focus-bg-color */				$btn-focus-bg-color:#697738;
+/* button focus-color */				$btn-focus-color:#fff;
+/* button text transform*/				$btn-text-transform:uppercase; /*to dp: make it dropdown*/
 /*==============================LAYOUT VARS ==============================================/*
 /* header background color*/			$header-background-color:#0f202f;
 /* header padding */					$header-padding:12px 0;
@@ -32,7 +44,7 @@
 /* order summary border-color */		$order-summary-border-color:#dadada;
 /* order summary color */				$order-summary-color:#6d6f71;
 /* footer background-color */			$footer-bg-color:#fff;
-/* footer-padding*/						$footer-padding:1.5em
+/* footer-padding*/						$footer-padding:1.5em;
 /* footer-top-border-color*/			$footer-top-border-color:#e5e5e5;
 /* footer-href-color*/					$footer-href-color:#999;
 /* footer-href-hover-color*/			$footer-href-hover-color:#2486ae;
@@ -83,7 +95,14 @@ button,input,optgroup,select,textarea{color:$primary-color;font:inherit;margin:0
 button,select{text-transform:none}
 
 /* ================================== Headings ====================================*/
-h1,h2,h3,h4,h5,h6{margin:0;font-weight:400;text-transform:normal;letter-spacing:normal;color:$headings-color;}
+h1,h2,h3,h4,h5,h6{
+	margin:0;font-weight:400;
+	text-transform:normal;
+	letter-spacing:normal;
+	color:$headings-color;
+	text-transform: $heading-text-transform;
+	padding:$heading-padding;
+}
 h1,h2{font-size:$h1-font-size;}
 h3,h4{font-size:$h3-font-size}
 h5,h6{font-size:$h5-font-size}
@@ -100,9 +119,6 @@ strong{color:$primary-color;}
 
 
 /*================================= FORM related ==================================*/
-form{margin:0}
-input{line-height:normal}
-input[type="checkbox"],input[type="radio"]{padding:0}
 fieldset{
 	border:1px solid #c0c0c0;
 	margin:0 2px;
@@ -126,21 +142,6 @@ input[type="text"]:-webkit-autofill,input[type="tel"]:-webkit-autofill,input[typ
 :-ms-input-placeholder{color:$label-color}
 
 .boxsizing select{padding-right:2em}
-.chrome select,.safari select{
-	-webkit-appearance:none;
-	background-image:url(//cdn.shopify.com/s/assets/checkout/icons/ico-updown.svg-4c5ac8f8d447206ab65a5d392d3dcd97.png);
-	background-image:url(//cdn.shopify.com/s/assets/checkout/icons/ico-updown-4c5ac8f8d447206ab65a5d392d3dcd97.svg),none;background-position:center center;
-	background-repeat:no-repeat;
-	background-position:right center
-}
-.chrome select:focus,.safari select:focus{
-	background-image:url(//cdn.shopify.com/s/assets/checkout/icons/ico-updown-focus.svg-ca782fe792487c2bbdaa07a37011714a.png);
-	background-image:url(//cdn.shopify.com/s/assets/checkout/icons/ico-updown-focus-ca782fe792487c2bbdaa07a37011714a.svg),none;
-	background-position:center center;
-	background-repeat:no-repeat;
-	background-position:right center
-}
-input[type='checkbox']{margin-right:.25em;-webkit-appearance:none;cursor:pointer;position:relative}
 
 @media all and (max-width: 599px){
 	.chrome input[type='checkbox'],.safari input[type='checkbox']{
@@ -149,8 +150,6 @@ input[type='checkbox']{margin-right:.25em;-webkit-appearance:none;cursor:pointer
 		border:2px solid #ccc;
 		border-radius:$fieldset-border-radius;
 		background:#ccc;
-		-webkit-transition:all 0.15s cubic-bezier(0, -0.5, 0, 1);
-		transition:all 0.15s cubic-bezier(0, -0.5, 0, 1)
 	}
 	.chrome input[type='checkbox']:focus,.safari input[type='checkbox']:focus{border-color:#bababa}
 	.chrome input[type='checkbox']:checked,.safari input[type='checkbox']:checked{background:#2a9dcc;border-color:#2a9dcc}
@@ -223,9 +222,6 @@ input[type='checkbox']{margin-right:.25em;-webkit-appearance:none;cursor:pointer
 	padding-right:4.5em
 }
 .boxsizing .field--has-inset-btn input[type="text"],.boxsizing .field--has-inset-btn input[type="tel"],.boxsizing .field--has-inset-btn input[type="email"],.boxsizing .field--has-inset-btn input[type="password"],.boxsizing .field--has-inset-btn select{
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
 	width:65%
 }
 .field--has-inset-btn .field__error-message{padding-right:5em}
@@ -283,7 +279,7 @@ input[type="text"],input[type="tel"],input[type="email"],input[type="password"],
 }
 
 .field--blank-slate .icon{display:block;margin:0 auto 1.5em}
-.field--error{background:#fff7f7;z-index:2}
+.field--error{background:$field-error-bg-color;z-index:2}
 .boxshadow .field--error{border:none;-webkit-box-shadow:0 0 0 1px #ffc4c4;box-shadow:0 0 0 1px #ffc4c4}
 .field--error ::-webkit-input-placeholder{color:#f4dede}
 .field--error :-moz-placeholder{color:#f4dede;opacity:1}
@@ -648,27 +644,92 @@ td strong{font-weight:500;color:#777}
 .sharing-icons li a:hover{opacity:1}
 
 /*==================================== Buttons ====================================*/
-.btn{display:inline-block;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:$field-padding;border:none;border-radius:$fieldset-border-radius;color:#fff;cursor:pointer;width:100%;text-align:center;font-weight:500;font-size:13px;font-size:1rem;-webkit-transition:color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;transition:color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;background-color:#2a9dcc;color:white}
-.btn:hover,.btn:focus{background-color:#2486ae;color:white}
-.boxshadow .btn{outline:none}
-.boxshadow .btn:focus{background-color:#2a9dcc;-webkit-box-shadow:inset 0 0 0 2px rgba(0,0,0,0.15);box-shadow:inset 0 0 0 2px rgba(0,0,0,0.15)}
-.boxshadow .btn:focus:hover{background-color:#2486ae}
-.btn.btn--primary{padding:1.5em 2em;*padding:1.5em 0;background-color:#8fc243;color:white}
-.btn.btn--primary:hover,.btn.btn--primary:focus{background-color:#7caa37;color:white}
-.boxshadow .btn.btn--primary{outline:none}
-.boxshadow .btn.btn--primary:focus{background-color:#8fc243;-webkit-box-shadow:inset 0 0 0 2px rgba(0,0,0,0.15);box-shadow:inset 0 0 0 2px rgba(0,0,0,0.15)}
-.boxshadow .btn.btn--primary:focus:hover{background-color:#7caa37}
-.btn.btn--delete{display:block;width:16px;height:16px;border-radius:50%;background-color:#bbb;padding:0;margin:0 .5em;float:left;background-image:url(//cdn.shopify.com/s/assets/checkout/icons/clear.svg-431a06340220ab904594c24e494cb6d3.png);background-image:url(//cdn.shopify.com/s/assets/checkout/icons/clear-431a06340220ab904594c24e494cb6d3.svg),none;background-position:center center;background-repeat:no-repeat;text-indent:100%;white-space:nowrap;overflow:hidden;background-color:#bbbbbb;color:rgba(0,0,0,0.6)}
-.btn.btn--delete:hover,.btn.btn--delete:focus{background-color:darkgray;color:rgba(0,0,0,0.7)}
-.boxshadow .btn.btn--delete{outline:none}
-.boxshadow .btn.btn--delete:focus{background-color:#bbbbbb;-webkit-box-shadow:inset 0 0 0 2px rgba(0,0,0,0.15);box-shadow:inset 0 0 0 2px rgba(0,0,0,0.15)}
-.boxshadow .btn.btn--delete:focus:hover{background-color:darkgray}
-.btn.btn--inset{text-align:center;text-transform:uppercase;font-weight:400;letter-spacing:.05em;padding:.7125em;width:auto;position:absolute;right:8px;top:8px;font-size:11px;font-size:0.875rem}
-.js .btn.btn--inset:not(.btn--is-active),.js .btn.btn--inset:not(.btn--is-active):hover,.js .btn.btn--inset:not(.btn--is-active):focus,.js .btn.btn--inset:not(.btn--is-active):active{background-color:transparent;color:#ccc;border:1px solid #e5e5e5;margin:-1px -1px 0 0;-webkit-box-shadow:none;box-shadow:none}
+.btn{display:inline-block;
+	padding:$btn-padding;
+	border-radius:$fieldset-border-radius;
+	color:$btn-normal-color;
+	font-size:$btn-font-size;
+	background-color:$btn-normal-bg-color;
+	text-transform: $btn-text-transform;
+}
+.btn:hover,.btn:focus{
+	background-color:$btn-focus-bg-color;
+	color:$btn-focus-color;
+}
+.boxshadow .btn:focus{
+	background-color:$btn-focus-bg-color;
+	color:$btn-focus-color;
+}
+.boxshadow .btn:focus:hover{
+	background-color:$btn-focus-bg-color;
+}
+.btn.btn--primary{
+	padding:$btn-padding;
+	*padding:$btn-padding;
+	background-color:$btn-normal-bg-color;
+	color:$btn-normal-color
+}
+.btn.btn--primary:hover,.btn.btn--primary:focus{
+	background-color:$btn-hover-bg-color;
+	color:$btn-hover-color;
+}
+.boxshadow .btn.btn--primary:focus{
+	background-color:#8fc243;
+}
+.boxshadow .btn.btn--primary:focus:hover{
+	background-color:#7caa37
+}
+
+.btn.btn--delete{
+	display:block;
+	width:16px;
+	height:16px;
+	border-radius:50%;
+	background-color:#bbb;
+	padding:0;margin:0 .5em;
+	float:left;
+	background-image:url(//cdn.shopify.com/s/assets/checkout/icons/clear.svg-431a06340220ab904594c24e494cb6d3.png);
+	background-image:url(//cdn.shopify.com/s/assets/checkout/icons/clear-431a06340220ab904594c24e494cb6d3.svg),none;
+	background-position:center center;
+	background-repeat:no-repeat;text-indent:100%;
+	white-space:nowrap;overflow:hidden;
+	background-color:#bbbbbb;
+	color:rgba(0,0,0,0.6)
+}
+.btn.btn--delete:hover,.btn.btn--delete:focus{
+	background-color:darkgray;
+	color:rgba(0,0,0,0.7)
+}
+.boxshadow .btn.btn--delete:focus{
+	background-color:#bbbbbb;
+}
+.boxshadow .btn.btn--delete:focus:hover{
+	background-color:darkgray
+}
+
+.btn.btn--inset{
+	text-align:center;
+	text-transform:$btn-text-transform;
+	font-weight:400;
+	letter-spacing:.05em;
+	padding:.7125em;
+	width:auto;
+	position:absolute;
+	right:8px;
+	top:8px;
+	font-size:11px;
+	font-size:0.875rem
+}
+.js .btn.btn--inset:not(.btn--is-active),.js .btn.btn--inset:not(.btn--is-active):hover,.js .btn.btn--inset:not(.btn--is-active):focus,.js .btn.btn--inset:not(.btn--is-active):active{
+	background-color:transparent;
+	color:#ccc;
+	border:1px solid #e5e5e5;
+	margin:-1px -1px 0 0;
+}
 
 @media all and (min-width: 600px){
-	.btn{width:auto;padding:1.125em 1.5em;*padding:1.125em .75em;font-size:14px;font-size:1rem}
-	.btn.btn--inset{padding:.9em 1em;*padding:.75em .5em;right:9px;top:9px;font-size:12px;font-size:0.875rem}
+	.btn{padding:$btn-padding;*padding:$btn-padding;font-size:$btn-font-size;}
+	.btn.btn--inset{padding:$btn-padding;*padding:$btn-padding;font-size:$btn-font-size}
 }
 
 /*================================ Call to Action =================================*/
@@ -976,16 +1037,4 @@ table+.call-to-action,.section__blank-slate+.call-to-action{margin-top:1em}
 	.has-modal .modal{position:relative;top:auto;left:auto;bottom:auto;right:auto}
 	.has-modal .policy-body p{font-size:.875em}
 }
-
-
-/* ================ media queries ===================================
-default breakpoints : 
-Mobile (0px and up) – does not require a media query
-Tablet (600px and up)
-Desktop (1000px and up)
-Large Desktop (1100px and up)
-http://docs.shopify.com/manual/configuration/store-customization/page-specific/checkout-page/advanced-customizations#breakpoints */
-
-
-/* START SPECIFIC COMMANDS COHERENT TO THE THEME */
 
