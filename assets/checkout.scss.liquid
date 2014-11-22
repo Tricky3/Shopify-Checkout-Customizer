@@ -5,12 +5,12 @@
 
 /*==============================GLOBAL VARS ==============================================/*
 /* font-family */						$font-stack:'BasicCommercialW01-Roma', Futura, "Trebuchet MS", Arial, sans-serif;
-/* base font-size */					$base-font-size:14px;
-/* Primary Color, used for body text */ $primary-color:#6d6f71;
-/* line height */						$line-height:1.5em;
-/* href color, normal status */			$href-normal-color:#4c99c2;
-/* href color, hover status */			$href-hover-color:#0e1f2e;
-/* selection background color */		$selection-bg-color:#0e1f2e;
+/* base font-size */					$base-font-size:{{ settings.font_size }};
+/* Primary Color, used for body text */ $primary-color:{{ settings.color }};
+/* line height */						$line-height:{{ settings.line_height }};
+/* href color, normal status */			$href-normal-color:{{ settings.link_color }};
+/* href color, hover status */			$href-hover-color:{{ settings.link_hovercolor }};
+/* selection background color */		$selection-bg-color:{{ settings.selection_bgcolor }};
 /* selection color */					$selection-color:#ffffff;
 /* heading color */						$headings-color:#333;
 /* h1 font-size */						$h1-font-size:24px;
@@ -27,15 +27,21 @@
 /* field padding */						$field-padding:1em;
 /* field error background */			$field-error-bg-color:#fff7f7;
 /*==============================BUTTON VARS ==============================================/*
-/* button normal-color */				$btn-normal-color:#fff;
+/* button normal-color */				$btn-normal-color:{{ settings.button_font_color }};
 /* button font-size */					$btn-font-size:13px;
-/* button normal-bg-color */			$btn-normal-bg-color:#595a55;
-/* button hover */						$btn-hover-color:#fff; 
-/* button background hover */			$btn-hover-bg-color:#0e1f2e; 
+/* button normal-bg-color */			$btn-normal-bg-color:{{ settings.button_color }};
+/* button hover */						$btn-hover-color:{{ settings.button_font_hovercolor }}; 
+/* button background hover */			$btn-hover-bg-color:{{ settings.button_hovercolor }}; 
 /* button-padding */					$btn-padding:1em;
 /* button focus-bg-color */				$btn-focus-bg-color:#697738;
 /* button focus-color */				$btn-focus-color:#fff;
 /* button text transform*/				$btn-text-transform:uppercase; /*to dp: make it dropdown*/
+/*==============================PAYMENT DUE VARS ==============================================/*
+/* payment due color*/					$payment-due-color:#000;
+/* payment due font-size*/				$payment-due-font-size:1.4em;
+/* payment-due-currency-bg-color */		$payment-due-currency-bg-color:#fff;
+/* payment-due-currency-color	 */		$payment-due-currency-color:#000;
+/* payment-due-currency-font-size */	$payment-due-currency-font-size:1.4em;
 /*==============================LAYOUT VARS ==============================================/*
 /* header background color*/			$header-background-color:#0f202f;
 /* header padding */					$header-padding:12px 0;
@@ -557,8 +563,22 @@ td strong{font-weight:500;color:#777}
 .payment-due:after{clear:both}
 .no-generatedcontent .payment-due{overflow:hidden}
 .payment-due__label{float:left;margin-top:.25em}
-.payment-due__price{float:right;color:#8fc243;line-height:$line-height;font-size:18px;font-size:1.4rem}
-.payment-due__currency{float:right;margin-right:.75em;padding:0.25em 0.3em 0.2em;background:#bbb;border-radius:$fieldset-border-radius;color:#fff;text-transform:uppercase;font-size:12px}
+.payment-due__price{
+	float:right;
+	color:$payment-due-color;
+	line-height:$line-height;
+	font-size:$payment-due-font-size;
+}
+.payment-due__currency{
+	float:right;
+	margin-right:.75em;
+	padding:0.25em 0.3em 0.2em;
+	background:$payment-due-currency-bg-color;
+	border-radius:$fieldset-border-radius;
+	color:$payment-due-currency-color;
+	text-transform:uppercase;
+	font-size:$payment-due-currency-font-size;
+}
 
 .savings{display:block;border-top:1px solid #ededed;text-align:center;color:#ccc;margin:2em 0 -0.5em;padding-top:1em;font-size:11px;font-size:0.875rem}
 .order-number{float:right;color:#ccc;margin-top:-$field-padding}
@@ -584,10 +604,6 @@ td strong{font-weight:500;color:#777}
 }
 
 
-/*===================================Multi Steps ==================================*/
-.shown-if-multi-step{display:none}
-.multi-step .section__form,.multi-step .section__blank-slate,.multi-step .section__notice--error,.multi-step .step--current .section__summary,.multi-step .step--blank .section__summary,.multi-step .step--current .section__blank-slate.hidden,.current-step-review .section__form,.current-step-review .section__blank-slate,.current-step-review .section__notice--error,.current-step-review .step--current .section__summary,.current-step-review .step--blank .section__summary,.current-step-review .step--current .section__blank-slate.hidden{display:none}
-.multi-step .shown-if-multi-step,.multi-step .step--current .section__form,.multi-step .step--current .next-step,.multi-step .step--current .section__blank-slate,.multi-step .step--current .section__notice--error,.multi-step .step--completed .section__edit-link,.current-step-review .shown-if-multi-step,.current-step-review .step--current .section__form,.current-step-review .step--current .next-step,.current-step-review .step--current .section__blank-slate,.current-step-review .step--current .section__notice--error,.current-step-review .step--completed .section__edit-link{display:block}
 
 /*=====================================Tooltip ====================================*/
 .has-tooltip{position:relative}
