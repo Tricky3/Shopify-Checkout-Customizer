@@ -2,6 +2,44 @@
    <legend>Checkout Settings : Unleashed </legend>
   <span class="note">Configure the new Responsive Checkout of shopify, all you can eat.</span>
   <table>
+
+    <tr>
+      <td colspan="6">
+        <h3 class="heading">Global Settings <span class="note">Affects just about everything</span></h3>
+      </td>
+    </tr>
+    
+    <tr>
+    <th>
+        <label for="checkout_font_size">Base Font Size</label>
+        <small>Insert a value that matches your shop's general configuration</small>
+    </th>
+    <td colspan="2"><input type="text" id="checkout_font_size" name="checkout_font_size" value="13px" /></td>
+     <th>
+      <label for="fieldset-border-radius">Border Radius</label>
+      <small>Border Radius values for inputs and buttons</small>
+     </th>
+    
+      <td colspan="2"><input type="text" id="fieldset-border-radius" name="fieldset-border-radius" value="0" /></td>
+    </tr>
+
+
+    <tr>
+    <th>
+        <label for="desktop-wrap">Desktop View: Max width</label>
+        <small>Insert a value that matches your shop's general configuration</small>
+    </th>
+    <td colspan="2"><input type="text" id="desktop-wrap" name="desktop-wrap" value="1060px" /></td>
+     <th>
+      <label for="desktop-wrap-padding">Desktop View: Padding Value for the External Wrap</label>
+      <small>configure the outermost padding value</small>
+     </th>
+    
+      <td colspan="2"><input type="text" id="desktop-wrap-padding" name="desktop-wrap-padding" value="0 2%" /></td>
+    </tr>
+
+
+
     <tr>
       <td colspan="6">
         <h3 class="heading">Header <span class="note">Uppermost section of the Checkout Page</span></h3>
@@ -127,8 +165,7 @@
       <td colspan="1"><input type="text" id="fieldset-bg-color" name="fieldset-bg-color" class="color" value="#fff"/></td>
       <th><label for="fieldset-border-color">Fieldset Border Color</label></th>
       <td colspan="1"><input type="text" id="fieldset-border-color" name="fieldset-border-color" class="color" value="#d8d8d8"/></td>
-      <th><label for="fieldset-border-radius">Fieldset Border Radius</label></th>
-      <td colspan="1"><input type="text" id="fieldset-border-radius" name="fieldset-border-radius" value="0" /></td>
+     
     </tr>
 
     <tr>
@@ -206,7 +243,7 @@
         <label for="btn-inset-hover-bg-color">Inset Buttons : Hover State Background Color</label>
       </th>
       <td>
-        <input id="btn-inset-bg-hover-color" name="btn-inset-bg-hover-color" class="color" value="#2a9dcc"/>
+        <input id="btn-inset-hover-bg-color" name="btn-inset-hover-bg-color" class="color" value="#2a9dcc"/>
       </td>
       <th>
         <label for="btn-inset-hover-color">Inset Buttons : Hover State Color</label>
