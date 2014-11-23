@@ -1,7 +1,6 @@
 <fieldset data-overrides-fieldset="checkout">
-
-   <legend>Tricky Checkout Settings</legend>
-  <span class="note">Configure the new Responsive Checkout of shopify</span>
+   <legend>Checkout Settings : Unleashed </legend>
+  <span class="note">Configure the new Responsive Checkout of shopify, all you can eat.</span>
   <table>
     <tr>
       <td colspan="6">
@@ -94,6 +93,24 @@
       <td><input type="text" id="h5-font-size" name="h5-font-size" value="13px" /></td>
     </tr>
 
+    <tr>
+      <td colspan="6">
+        <h3 class="heading">Main Section <span class="note">Where all the oder info and actions reside</span></h3>
+      </td>
+    </tr>
+
+    <tr>
+      <th><label for="main-bg-color">Main Background Color</label></th>
+      <td colspan="5"><input type="text" id="main-bg-color" name="main-bg-color" class="color" value="#FFFFFF"/></td>
+    </tr>
+
+    <tr>
+      <th><label for="section-border-color">Section Border Color</label>
+        <small>separating the distinct section between customer info, shipping and billing</small>
+      </th>
+      <td colspan="5"><input type="text" id="section-border-color" name="section-border-color" class="color" value="#e5e5e5"/></td>
+    </tr>
+
      <tr>
       <td colspan="6">
         <h3 class="heading">Form Settings <span class="note">Style your user Input</span></h3>
@@ -124,7 +141,82 @@
     </tr>
 
 
+    <tr>
+      <td colspan="6">
+        <h3 class="heading"> Checkout Buttons <span> Look for "Base Styles" settings for additional settings</span></h3>
+      </td>
+    </tr>
+    
+    <tr class="horizontal">
+      <th><label for="btn-font-size">Button Font Size</label></th>
+      <td colspan="1"><input type="text" id="btn-font-size" name="btn-font-size" value="13px" /></td>
+      <th><label for="btn-padding">Button Padding</label></th>
+      <td colspan="1"><input type="text" id="btn-padding" name="btn-padding" value="1em" /></td>
+      <th><label for="btn-text-transform">Button Text Transform</label></th>
+      <td><select name="btn-text-transform" id="btn-text-transform">
+          <option value="none">none</option>
+          <option value="uppercase" selected="uppercase">uppercase</option>
+          <option value="lowercase">lowercase</option>
+          <option value="capitalize">capitalize</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <th><label for="btn-focus-bg-color">Button Focus : Background Color</label></th>
+      <td colspan="1"><input type="text" id="btn-focus-bg-color" name="btn-focus-bg-color" class="color" value="697738" /></td>
+      
+       <th><label for="btn-focus-color">Button Focus : Text Color</label></th>
+      <td colspan="1"><input type="text" id="btn-focus-color" name="btn-focus-color" class="color" value="FFFFFF" /></td>
+    </tr>
+
+
      <tr>
+      <td colspan="6">
+        <h3>Inset Checkout Buttons<span> Changes section, discount and gift card button</span></h3>
+      </td>
+    </tr>
+
+     <tr class="horizontal">
+      <th><label for="btn-inset-font-size">Inset Buttons Font Size</label></th>
+      <td colspan="1"><input type="text" id="btn-inset-font-size" name="btn-inset-font-size" value="12px" /></td>
+      <th><label for="btn-inset-top-position">Inset Buttons Top Position</label></th>
+      <td colspan="1"><input type="text" id="btn-inset-top-position" name="btn-inset-top-position" value="8px" /></td>
+      <th><label for="btn-inset-padding">Inset Buttons Padding</label></th>
+      <td colspan="1"><input type="text" id="btn-inset-padding" name="btn-inset-padding" value=".8em" /></td>
+    </tr>
+
+    <tr class="horizontal">
+       <th>
+        <label for="btn-inset-bg-color">Inset Buttons : Background Color</label>
+      </th>
+      <td>
+        <input id="btn-inset-bg-color" name="btn-inset-bg-color" class="color" value="#2a9dcc"/>
+      </td>
+      <th>
+        <label for="btn-inset-color">Inset Buttons : Color</label>
+      </th>
+      <td>
+        <input id="btn-inset-color" name="btn-inset-color" class="color" value="#2a9dcc"/>
+      </td>
+    </tr>
+
+    <tr class="horizontal">
+       <th>
+        <label for="btn-inset-hover-bg-color">Inset Buttons : Hover State Background Color</label>
+      </th>
+      <td>
+        <input id="btn-inset-bg-hover-color" name="btn-inset-bg-hover-color" class="color" value="#2a9dcc"/>
+      </td>
+      <th>
+        <label for="btn-inset-hover-color">Inset Buttons : Hover State Color</label>
+      </th>
+      <td>
+        <input id="btn-inset-hover-color" name="btn-inset-hover-color" class="color" value="#2a9dcc"/>
+      </td>
+    </tr>
+   
+    <tr>
       <td colspan="6">
         <h3 class="heading">Order Summary <span class="note"> Right side of the checkout</span></h3>
       </td>
@@ -192,10 +284,8 @@
       <td colspan="2"><input type="text" id="footer-href-hover-color" name="footer-href-hover-color" class="color" value="#2486ae"/></td>
     </tr>
 
-   
+  
 
 </table>
-
-
 
 </fieldset>
