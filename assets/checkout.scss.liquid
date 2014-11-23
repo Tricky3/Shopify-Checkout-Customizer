@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fast.fonts.com/cssapi/4b266a0c-acd1-4016-8e36-45aaf6a347fa.css");
 
 /* Take the Risk to Reinvent */
 
@@ -29,6 +28,10 @@
 /* field focus color */					$field_focus-color:{{ settings.field_focus-color }};
 /* field padding */						$field-padding:{{ settings.field-padding }};
 /* field error background */			$field-error-bg-color:{{ settings.field-error-bg-color }};
+/* field error color */					$field-error-color:{{ settings.field-error-color }};
+/* field error label color */			$field-error-label-color:{{ settings.field-error-label-color }};
+/* field error placeholder color */		$field-error-placeholder-color:{{ settings.field-error-placeholder-color }};
+
 /*==============================BUTTON VARS ==============================================/*
 /* DEF - button normal-color */			$btn-normal-color:{{ settings.button_font_color }};
 /* DEF - button normal-bg-color */		$btn-normal-bg-color:{{ settings.button_color }};
@@ -75,6 +78,7 @@
 /*==============================WRAP VARS ==============================================/*
 /* desktop wrap */						$desktop-wrap:{{settings.desktop-wrap}};
 /* desktop wrap padding */				$desktop-wrap-padding:{{settings.desktop-wrap-padding}};
+/* custom CSS */						{% if settings.custom_css %}{{ settings.custom_css }}{% endif %}
 
 
 
@@ -311,23 +315,31 @@ input[type="text"],input[type="tel"],input[type="email"],input[type="password"],
 }
 
 .field--blank-slate .icon{display:block;margin:0 auto 1.5em}
-.field--error{background:$field-error-bg-color;z-index:2}
+.field--error{
+	background:$field-error-bg-color;
+	border-radius:$fieldset-border-radius !important;
+}
 .boxshadow .field--error{
 	border:none;
-	-webkit-box-shadow:0 0 0 1px #ffc4c4;
-	box-shadow:0 0 0 1px #ffc4c4
+	-webkit-box-shadow:0 0 0 0;
+	box-shadow:0 0 0 0;
 }
-.field--error ::-webkit-input-placeholder{color:#f4dede}
-.field--error :-moz-placeholder{color:#f4dede;opacity:1}
-.field--error ::-moz-placeholder{color:#f4dede;opacity:1}
-.field--error :-ms-input-placeholder{color:#f4dede}
+
+.field--error input, .field--error select {
+	color: $field-error-color;
+}
+.field--error label {color: $field-error-label-color;}
+.field--error ::-webkit-input-placeholder{color:$field-error-placeholder-color;}
+.field--error :-moz-placeholder{color:$field-error-placeholder-color;}
+.field--error ::-moz-placeholder{color:$field-error-placeholder-color;}
+.field--error :-ms-input-placeholder{color:$field-error-placeholder-color;}
 .field--error label,.field--error input[type="text"],.field--error input[type="tel"],.field--error input[type="email"],.field--error input[type="password"],.field--error select,.field--error .applied-gift-card{padding-bottom:0.5em}
 @media all and (min-width: 600px){
 	.field--error label,.field--error input[type="text"],.field--error input[type="tel"],.field--error input[type="email"],.field--error input[type="password"],.field--error select,.field--error .applied-gift-card{padding-bottom:0.625em}
 }
 
 .field--error .field__error-message{display:block}
-.field__error-message{display:none;color:#ff6d6d;clear:both;padding-left:35%;margin-bottom:0;font-size:11px;font-size:0.875rem;padding-bottom:1em}
+.field__error-message{color:$field-error-color;}
 @media all and (min-width: 600px){
 	.field__error-message{padding-bottom:$field-padding}
 }
@@ -340,7 +352,17 @@ input[type="text"],input[type="tel"],input[type="email"],input[type="password"],
 	border-radius:$fieldset-border-radius !important
 		}
 @media all and (min-width: 600px){
-	.field--error:after{content:">";display:inline-block;font-family:'Checkout Symbols';font-size:$field-padding;color:#ff6d6d;position:absolute;top:10px;left:-2em;padding:0 .25em;-webkit-animation:slideInLeft .8s ease-out both, back-and-forth .5s ease-in infinite both alternate;animation:slideInLeft .8s ease-out both, back-and-forth .5s ease-in infinite both alternate}
+	.field--error:after{
+		content:">";
+		display:inline-block;
+		font-family:'Checkout Symbols';
+		font-size:$field-padding;
+		color:$field-error-bg-color;
+		position:absolute;
+		top:10px;
+		left:-2em;
+		padding:0 .25em;
+	}
 }
 
 
