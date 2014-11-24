@@ -5,7 +5,7 @@
 /*==============================GLOBAL VARS ==============================================
 		LEGEND: DEF == variables that come from the default tricky settings
 /*
-/* DEF - font-family */					$font-stack:{{ settings.p_font_family }};
+/* font-family */						$font-stack:{{ settings.p_font_family }};
 /* base font-size */					$base-font-size:{{ settings.checkout_font_size }};
 /* DEF - Primary Color, body text */ 	$primary-color:{{ settings.color }};
 /* DEF - line height */					$line-height:{{ settings.line_height }};
@@ -441,6 +441,7 @@ td strong{font-weight:500;color:#777}
 
 /*=========================== Header and shop ID [1.1] ============================*/
 .header{padding:$header-padding;position:relative;zoom:1;overflow:hidden;background:$header-background-color;}
+.cssgradients .header__backdrop {background:$header-background-color;}
 .header .icon--lock{
 	position:absolute;
 	top:1em;right:1em;
