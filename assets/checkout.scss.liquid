@@ -446,52 +446,83 @@ td strong{font-weight:500;color:#777}
 /*=========================== Header and shop ID [1.1] ============================*/
 .header{padding:$header-padding;position:relative;zoom:1;overflow:hidden;background:$header-background-color;}
 .cssgradients .header__backdrop {background:$header-background-color;}
-.header .icon--lock{
-	position:absolute;
-	top:1em;right:1em;
-	z-index:2;
-	background-image:url(//cdn.shopify.com/s/assets/checkout/icons/ico-lock-grey.svg-b4b8945a4e3cfa0cab824cc584cd2627.png);
-	background-image:url(//cdn.shopify.com/s/assets/checkout/icons/ico-lock-grey-b4b8945a4e3cfa0cab824cc584cd2627.svg),none;
-	background-position:center center;background-repeat:no-repeat
+.header .icon--lock{display: none;}
+.shop{
+	width: 100%;
+	/* center the header optional */		
+	{% if settings.center_header_elems %}
+		float: none;
+  		text-align: center;
+	{% endif %}
 }
-
-.shop{width: 100%;}
-.shop__name{z-index:2;position:relative;color:$shop-name-color;font-weight:400;-webkit-transition:none;transition:none;}
+.shop__name{
+	color:$shop-name-color;
+}
 
 .shop__desc {
     cursor: default;
-    float: right;
+
+    {% if settings.center_header_elems %}
+		float: none;
+		margin-top:10px;
+	{% else %}
+		float: right;
+	{% endif %}
+    
     font-size: 0.8em;
     text-transform: uppercase;
 }
 
 .shop__desc{color:$shop-desc-color;}
 .rgba .shop__desc{color:$shop-desc-color;}
-.shop__logo{float: left;}
-.shop__logo+.shop__desc{margin-top:0}
+.shop__logo{
+
+	{% if settings.center_header_elems %}
+		 margin: 0 auto;
+  	{% else %}
+		float: left;
+	{% endif %}
+
+
+}
+.shop__logo+.shop__desc{
+	{% if settings.center_header_elems %}
+		margin-top:10px;
+	{% else %}
+		margin-top:0;
+	{% endif %}
+}
 
 @media all and (min-width: 600px){
 	.header{padding:$header-padding;}
 	.shop__logo{max-width:200px}
 	.shop__desc {
-    color: white;
-    cursor: default;
-    float: right;
+    {% if settings.center_header_elems %}
+		float: none;
+		margin-top:10px;
+	{% else %}
+		float: right;
+	{% endif %}
+    
     font-size: 0.8em;
-    margin-top: 0;
     text-transform: uppercase;
-}
+	color:$shop-desc-color;
+	}
 }
 
 @media screen and (min-width: 1000px){
 	.header{padding:$header-padding;}
 	.shop__desc {
-    color: white;
-    cursor: default;
-    float: right;
+    {% if settings.center_header_elems %}
+		float: none;
+		margin-top:10px;
+	{% else %}
+		float: right;
+	{% endif %}
+    
     font-size: 0.8em;
-    margin-top: 0;
     text-transform: uppercase;
+	color:$shop-desc-color;
 	}
 }
 
