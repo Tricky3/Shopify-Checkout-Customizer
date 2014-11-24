@@ -19,7 +19,8 @@
 /* h1 font-size */						$h5-font-size:{{ settings.h5-font-size }};
 /* heading text transform*/				$heading-text-transform:{{ settings.heading-text-transform }}; 
 /* heading padding*/					$heading-padding:{{ settings.heading-padding }};
-/* shop tagline */						$shop-desc-color:{{ settings.tagline-color }};
+/* shop tagline color */				$shop-desc-color:{{ settings.tagline-color }};
+/* shop tagline font-size */			$shop-desc-font-size:{{ settings.tagline-font-size }};
 /*==============================FORM VARS ==============================================/*
 /* label color */						$label-color:{{ settings.label-color }};
 /* fieldset border color */				$fieldset-border-color:{{ settings.fieldset-border-color }};
@@ -469,7 +470,7 @@ td strong{font-weight:500;color:#777}
 		float: right;
 	{% endif %}
     
-    font-size: 0.8em;
+    font-size: $shop-desc-font-size;
     text-transform: uppercase;
 }
 
@@ -504,7 +505,7 @@ td strong{font-weight:500;color:#777}
 		float: right;
 	{% endif %}
     
-    font-size: 0.8em;
+    font-size: $shop-desc-font-size;
     text-transform: uppercase;
 	color:$shop-desc-color;
 	}
@@ -520,7 +521,7 @@ td strong{font-weight:500;color:#777}
 		float: right;
 	{% endif %}
     
-    font-size: 0.8em;
+    font-size: $shop-desc-font-size;
     text-transform: uppercase;
 	color:$shop-desc-color;
 	}
@@ -1186,11 +1187,11 @@ table+.call-to-action,.section__blank-slate+.call-to-action{margin-top:1em}
 .section__notice:after{clear:both}
 .no-generatedcontent .section__notice{overflow:hidden}
 .section__notice--error{background-color:$field-error-bg-color;}
-.section__notice--error h4{color:$primary-color}
-.section__notice--error p{color:$primary-color;margin: 0 3rem 1rem 0rem;}
+.section__notice--error h4{color:$field-error-label-color}
+.section__notice--error p{color:$field-error-color;margin: 0 3rem 1rem 0rem;}
 .section__notice--warning{background:$field-error-bg-color;}
-.section__notice--warning h4{color:$primary-color}
-.section__notice--warning p{color:$primary-color}
+.section__notice--warning h4{color:$field-error-label-color}
+.section__notice--warning p{color:$field-error-color}
 
 
 /*================================Logged In Customer ==============================*/
