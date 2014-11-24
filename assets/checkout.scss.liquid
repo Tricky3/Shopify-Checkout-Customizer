@@ -75,6 +75,10 @@
 /* footer-href-hover-color*/			$footer-href-hover-color:{{ settings.footer-href-hover-color }};
 /* footer-text-color*/					$footer-text-color:{{ settings.footer-text-color }};
 /* footer-font-size*/					$footer-font-size:{{ settings.footer-font-size }};
+/* footer text transform */				$footer-text-transform:{{ settings.footer-text-transform }};
+/* footer link separator */				{% if settings.footer-link-separator != blank %}
+											$footer-link-separator:"{{ settings.footer-link-separator }}";
+										{% endif %}
 /*==============================WRAP VARS ==============================================/*
 /* desktop wrap */						$desktop-wrap:{{settings.desktop-wrap}};
 /* desktop wrap padding */				$desktop-wrap-padding:{{settings.desktop-wrap-padding}};
@@ -512,6 +516,7 @@ td strong{font-weight:500;color:#777}
 	padding:$footer-padding;
 	border-top:1px solid $footer-top-border-color;
 	background:$footer-bg-color;
+	text-transform: $footer-text-transform;
 }
 .rgba .footer{
 	background:$footer-bg-color;
@@ -531,15 +536,39 @@ td strong{font-weight:500;color:#777}
 .footer__nav:after,.footer__nav:before{content:"";display:table}
 .footer__nav:after{clear:both}
 .no-generatedcontent .footer__nav{overflow:hidden}
-.footer__nav__item{float:left;margin:0 .25em}
-.footer__nav__item:first-child{margin-left:-0.25em}
+.footer__nav__item{float:left;margin:0 0.25em 0 0}
+.footer__nav__item:first-child{margin-left:0}
+.footer__nav__item:last-child{margin-right:0}
+
 .footer__nav__link{
 	display:block;
 	border-bottom:3px solid transparent;
 	padding:.75em .25em 1.5em;
-	margin-bottom:-$footer-padding;
+	margin-bottom:0;
 	font-size:$footer-font-size;
 }
+
+{% if settings.footer-link-separator != blank %}
+
+.footer__nav__item:first-child:before {
+    content: "";
+    margin: 0;
+}
+.footer__nav__item:before {
+    color: white;
+    content: $footer-link-separator;;
+    display: flex;
+    font-size: 80%;
+    margin: 0 0.5em;
+}
+
+.footer__nav__item {
+	 display: flex;
+    margin: 0 !important;
+}
+
+{% endif %}
+
 .footer__nav__link.is-active{
 	color:$footer-href-color;
 	border-color:$footer-top-border-color;
@@ -551,13 +580,20 @@ td strong{font-weight:500;color:#777}
 @media all and (min-width: 600px){
 	.footer{padding:$footer-padding 0}
 	.footer__copyright{font-size:$footer-font-size;margin-bottom:.5em}
-	.footer__nav__link{padding:.125em .25em 1.75em;margin-bottom:-1.75em;font-size:$footer-font-size;}
+	.footer__nav__link{
+		padding:.125em .25em 1.75em;
+		margin-bottom:-1.75em;
+		font-size:$footer-font-size;
+	}
 }
 @media screen and (min-width: 1000px){
 	.footer__nav{float:right}
 	.footer__copyright{float:left;margin-bottom:-0.175em}
-	.footer__nav__link{margin-bottom:0}.footer__nav__item{margin:0 .5em}
-	.footer__nav__item:first-child{margin-left:-0.5em}
+	.footer__nav__link{
+		margin-bottom:0
+	}
+	.footer__nav__item{margin:0 0.5em 0 0}
+	.footer__nav__item:first-child{margin-left:0}
 }
 
 /*=========================== Recap Order Summary [2.2]============================*/
@@ -746,9 +782,13 @@ td strong{font-weight:500;color:#777}
 	background-color:$btn-normal-bg-color;
 	text-transform: $btn-text-transform;
 }
-.btn:hover,.btn:focus{
+.btn:focus{
 	background-color:$btn-focus-bg-color;
 	color:$btn-focus-color;
+}
+.btn:hover{
+	background-color:$btn-hover-bg-color;
+	color:$btn-hover-color;
 }
 .boxshadow .btn:focus{
 	background-color:$btn-focus-bg-color;
