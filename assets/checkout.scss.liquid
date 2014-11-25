@@ -79,7 +79,7 @@ $fallback_selection-color : #FFFFFF;
 										{% endif %}
 
 
-/* DEF - button background hover */		{% if settings..button_hovercolor != blank %}
+/* DEF - button background hover */		{% if settings.button_hovercolor != blank %}
 											$tricky_var-btn-hover-bg-color:{{ settings.button_hovercolor }};
 										{% else %}
 											$tricky_var-btn-hover-bg-color:$fallback_btn-hover-bg-color;
@@ -157,7 +157,6 @@ $fallback_selection-color : #FFFFFF;
 /*==============================WRAP VARS ==============================================/*
 /* desktop wrap */						$checkout_desktop-wrap:{{settings.checkout_desktop-wrap}};
 /* desktop wrap padding */				$checkout_desktop-wrap-padding:{{settings.checkout_desktop-wrap-padding}};
-/* custom CSS */						{% if settings.checkout_custom_css %}{{ settings.checkout_custom_css }}{% endif %}
 
 body, button, input, select, textarea {
   font-family: $tricky_var-font-stack;
@@ -1272,6 +1271,9 @@ table+.call-to-action,.section__blank-slate+.call-to-action{margin-top:1em}
 	.subsection{padding:0 0 2.5em}
 	.subsection:first-child{padding-top:2.5em}
 }
+
+/*========================== overriding with custom CSS ==========================*/
+{% if settings.checkout_custom_css %}{{ settings.checkout_custom_css }}{% endif %}
 
 /*==================================Print Styles ==================================*/
 @media print{
