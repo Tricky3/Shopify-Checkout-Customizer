@@ -99,6 +99,7 @@ $fallback_selection-color : #FFFFFF;
 /* shop tagline color */				$checkout_shop-desc-color:{{ settings.checkout_shop-desc-color }};
 /* shop tagline font-size */			$checkout_shop-desc-font-size:{{ settings.checkout_shop-desc-font-size }};
 /* global border radius */				$checkout_border-radius:{{ settings.checkout_border-radius }};
+/* global border style */				$checkout_border-style:{{ settings.checkout_border-style }};
 
 /*==============================FORM VARS ==============================================/*
 /* label color */						$checkout_label-color:{{ settings.checkout_label-color }};
@@ -217,7 +218,7 @@ strong{color:$tricky_var-primary-color;}
 
 /*================================= FORM related ==================================*/
 fieldset{
-	border:1px solid #c0c0c0;
+	border:1px $checkout_border-style #c0c0c0;
 	margin:0 2px;
 	padding:0.35em 0.625em 0.75em
 }
@@ -244,7 +245,7 @@ input[type="text"]:-webkit-autofill,input[type="tel"]:-webkit-autofill,input[typ
 	.chrome input[type='checkbox'],.safari input[type='checkbox']{
 		width:34px;
 		height:20px;
-		border:2px solid #ccc;
+		border:2px $checkout_border-style #ccc;
 		border-radius:$checkout_border-radius;
 		background:#ccc;
 	}
@@ -257,7 +258,7 @@ input[type="text"]:-webkit-autofill,input[type="tel"]:-webkit-autofill,input[typ
 }
 
 @media all and (min-width: 600px){
-	.chrome input[type="checkbox"],.safari input[type="checkbox"]{border-radius:$checkout_border-radius;width:18px;height:18px;border:1px solid #d8d8d8;vertical-align:-4px;-webkit-transition:-webkit-box-shadow 0.1s cubic-bezier(0.3, 0, 0, 1.2),border-color 0.1s cubic-bezier(0.3, 0, 0, 1.2);transition:box-shadow 0.1s cubic-bezier(0.3, 0, 0, 1.2),border-color 0.1s cubic-bezier(0.3, 0, 0, 1.2)}
+	.chrome input[type="checkbox"],.safari input[type="checkbox"]{border-radius:$checkout_border-radius;width:18px;height:18px;border:1px $checkout_border-style #d8d8d8;vertical-align:-4px;-webkit-transition:-webkit-box-shadow 0.1s cubic-bezier(0.3, 0, 0, 1.2),border-color 0.1s cubic-bezier(0.3, 0, 0, 1.2);transition:box-shadow 0.1s cubic-bezier(0.3, 0, 0, 1.2),border-color 0.1s cubic-bezier(0.3, 0, 0, 1.2)}
 	.chrome input[type="checkbox"]:hover,.safari input[type="checkbox"]:hover{border-color:#ccc}
 	.chrome input[type="checkbox"]:focus,.safari input[type="checkbox"]:focus{-webkit-box-shadow:0 0 0 2px #2a9dcc;box-shadow:0 0 0 2px #2a9dcc;border-color:transparent}
 	.chrome input[type="checkbox"]:checked:after,.safari input[type="checkbox"]:checked:after{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);visibility:visible}
@@ -272,7 +273,7 @@ input[type="text"]:-webkit-autofill,input[type="tel"]:-webkit-autofill,input[typ
 .chrome .radio-group input[type="radio"]+label{padding-left:2.25em}
 .radio-group label{width:auto !important}input[type="radio"]{float:left}
 .firefox input[type="radio"]{margin-top:3px}
-.chrome input[type="radio"],.safari input[type="radio"]{-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-appearance:none;display:block;width:20px;height:20px;margin:0;border:1px solid #ccc;border-radius:50%;cursor:pointer;-webkit-box-shadow:0 0 0 0 #2a9dcc inset;box-shadow:0 0 0 0 #2a9dcc inset;-webkit-transition:-webkit-box-shadow 0.3s cubic-bezier(0.3, 0, 0, 1.2),background-color 0.3s cubic-bezier(0.3, 0, 0, 1.2),border-color 0.3s cubic-bezier(0.3, 0, 0, 1.2);transition:box-shadow 0.3s cubic-bezier(0.3, 0, 0, 1.2),background-color 0.3s cubic-bezier(0.3, 0, 0, 1.2),border-color 0.3s cubic-bezier(0.3, 0, 0, 1.2)}
+.chrome input[type="radio"],.safari input[type="radio"]{-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-appearance:none;display:block;width:20px;height:20px;margin:0;border:1px $checkout_border-style #ccc;border-radius:50%;cursor:pointer;-webkit-box-shadow:0 0 0 0 #2a9dcc inset;box-shadow:0 0 0 0 #2a9dcc inset;-webkit-transition:-webkit-box-shadow 0.3s cubic-bezier(0.3, 0, 0, 1.2),background-color 0.3s cubic-bezier(0.3, 0, 0, 1.2),border-color 0.3s cubic-bezier(0.3, 0, 0, 1.2);transition:box-shadow 0.3s cubic-bezier(0.3, 0, 0, 1.2),background-color 0.3s cubic-bezier(0.3, 0, 0, 1.2),border-color 0.3s cubic-bezier(0.3, 0, 0, 1.2)}
 .chrome input[type="radio"]:after,.safari input[type="radio"]:after{content:"";display:block;width:20px;height:20px;margin-left:-1px;margin-top:-1px;background-position:center center;border-radius:50%;opacity:0;visibility:hidden;-webkit-transform:scale(0.2);-ms-transform:scale(0.2);transform:scale(0.2);-webkit-transition:opacity 0.2s cubic-bezier(0.3, 0, 0, 1.2) 0.1s,visibility 0.2s cubic-bezier(0.3, 0, 0, 1.2) 0.1s,-webkit-transform 0.2s cubic-bezier(0.3, 0, 0, 1.2) 0.1s;transition:opacity 0.2s cubic-bezier(0.3, 0, 0, 1.2) 0.1s,visibility 0.2s cubic-bezier(0.3, 0, 0, 1.2) 0.1s,transform 0.2s cubic-bezier(0.3, 0, 0, 1.2) 0.1s;background-image:url(//cdn.shopify.com/s/assets/checkout/icons/ico-check-white.svg-38c64285d92e39f89e95d614844967fa.png);background-image:url(//cdn.shopify.com/s/assets/checkout/icons/ico-check-white-38c64285d92e39f89e95d614844967fa.svg),none;background-position:center center;background-repeat:no-repeat}
 .chrome input[type="radio"]:hover,.safari input[type="radio"]:hover{border-color:#b3b3b3}
 .chrome input[type="radio"]:focus,.safari input[type="radio"]:focus{outline:none}
@@ -289,7 +290,7 @@ input[type="text"]:-webkit-autofill,input[type="tel"]:-webkit-autofill,input[typ
 
 /*==================================== Fieldsets ==================================*/
 .fieldset{
-	border:1px solid $checkout_fieldset-border-color;
+	border:1px $checkout_border-style $checkout_fieldset-border-color;
 	border-radius:$checkout_border-radius;
 	background:$checkout_fieldset-bg-color;
 	margin-bottom:1.5em
@@ -297,7 +298,7 @@ input[type="text"]:-webkit-autofill,input[type="tel"]:-webkit-autofill,input[typ
 .fieldset:last-child{margin-bottom:0}
 .field{
 	background: $checkout_fieldset-bg-color;
-	border-top:1px solid $checkout_fieldset-border-color;
+	border-top:1px $checkout_border-style $checkout_fieldset-border-color;
 	border-radius:$checkout_border-radius;
 }
 @media all and (min-width: 600px){
@@ -435,13 +436,13 @@ input[type="text"],input[type="tel"],input[type="email"],input[type="password"],
 
 /* ==================================== Tables ====================================*/
 table{border-collapse:collapse;border-spacing:0}
-table{width:100%;border-collapse:collapse;border-spacing:0;border-bottom:1px solid #ededed}
+table{width:100%;border-collapse:collapse;border-spacing:0;border-bottom:1px $checkout_border-style #ededed}
 td,th{padding:0}.js [data-hidden-if-js]{display:none}.no-js [data-shown-if-js]{display:none}
-th{color:#555;text-align:center;font-weight:500;padding-bottom:1em;border-bottom:1px solid #ededed}
+th{color:#555;text-align:center;font-weight:500;padding-bottom:1em;border-bottom:1px $checkout_border-style #ededed}
 th:first-child{text-align:left}
 th:last-child{text-align:right}
 tr:first-child td{border-top:none}
-tr td{border-top:1px solid #ededed}
+tr td{border-top:1px $checkout_border-style #ededed}
 td{color:#999;text-align:center;padding:1.5em 0}
 td:first-child{text-align:left}td:last-child{text-align:right}
 td small{color:#ccc;display:block;font-size:11px;font-size:0.875rem}
@@ -608,7 +609,7 @@ td strong{font-weight:500;color:#777}
 /*================================= Footer [3.1] ==================================*/
 .footer{
 	padding:$checkout_footer-padding;
-	border-top:1px solid $checkout_footer-top-border-color;
+	border-top:1px $checkout_border-style $checkout_footer-top-border-color;
 	background:$checkout_footer-bg-color;
 	text-transform: $checkout_footer-text-transform;
 }
@@ -636,7 +637,7 @@ td strong{font-weight:500;color:#777}
 
 .footer__nav__link{
 	display:block;
-	border-bottom:3px solid transparent;
+	border-bottom:3px $checkout_border-style transparent;
 	padding:.75em .25em 1.5em;
 	margin-bottom:0;
 	font-size:$checkout_footer-font-size;
@@ -693,8 +694,8 @@ td strong{font-weight:500;color:#777}
 /*=========================== Recap Order Summary [2.2]============================*/
 .order-summary-recap{
 	background:$checkout_order-summary-background-color;
-	border-top:1px solid $checkout_order-summary-border-color;
-	border-bottom:1px solid$checkout_order-summary-border-color;
+	border-top:1px $checkout_border-style $checkout_order-summary-border-color;
+	border-bottom:1px $checkout_border-style $checkout_order-summary-border-color;
 	color:$checkout_order-summary-color;
 }
 .order-summary-recap strong{font-weight:500;color:$checkout_order-summary-color;}
@@ -706,7 +707,7 @@ td strong{font-weight:500;color:#777}
 	width:18em;
 	padding-bottom:0;
 	padding-top:0;
-	border-right:1px solid $checkout_order-summary-border-color;
+	border-right:1px $checkout_border-style $checkout_order-summary-border-color;
 	padding-right:1.5em;
 	margin-left:1.5em
 }
@@ -722,14 +723,14 @@ td strong{font-weight:500;color:#777}
 	.order-summary-recap{display:none}
 }
 
-.order-summary{background:$checkout_order-summary-background-color;border-top:1px solid $checkout_order-summary-border-color;color:$checkout_order-summary-color;zoom:1}
+.order-summary{background:$checkout_order-summary-background-color;border-top:1px $checkout_border-style $checkout_order-summary-border-color;color:$checkout_order-summary-color;zoom:1}
 .order-summary strong{font-weight:500;color:$checkout_order-summary-color}
-.order-summary .product-list .product{padding-right:5.5em;border-top:1px solid #e7e7e7}
+.order-summary .product-list .product{padding-right:5.5em;border-top:1px $checkout_border-style #e7e7e7}
 .order-summary .product-list .product:first-child{border-top:none;margin-top:-1.125em}
 .order-summary .product-list .product:last-child{margin-bottom:-1.125em}
-.order-summary__section{padding:1.5em;border-top:1px solid #e1e1e1}
+.order-summary__section{padding:1.5em;border-top:1px $checkout_border-style #e1e1e1}
 .order-summary__section:first-child{border-top:none}
-.summary-body{border-top:1px solid #e1e1e1}
+.summary-body{border-top:1px $checkout_border-style #e1e1e1}
 
 .product-list .product{padding:1.125em 0}
 .product-list .product__image{margin-left:-6em;margin-right:0}
@@ -758,7 +759,7 @@ td strong{font-weight:500;color:#777}
 .total-line h3{float:left}
 .total-line__name{float:left}
 .total-line__price{float:right}
-.total-line--total{border-top:1px solid #e7e7e7;margin-top:1em;padding-top:1em}
+.total-line--total{border-top:1px $checkout_border-style #e7e7e7;margin-top:1em;padding-top:1em}
 
 .payment-due-container{zoom:1}
 .payment-due-container:after,.payment-due-container:before{content:"";display:table}
@@ -787,11 +788,11 @@ td strong{font-weight:500;color:#777}
 	font-size:$checkout_payment-due-currency-font-size;
 }
 
-.savings{display:block;border-top:1px solid #ededed;text-align:center;color:#ccc;margin:2em 0 -0.5em;padding-top:1em;font-size:11px;font-size:0.875rem}
+.savings{display:block;border-top:1px $checkout_border-style #ededed;text-align:center;color:#ccc;margin:2em 0 -0.5em;padding-top:1em;font-size:11px;font-size:0.875rem}
 .order-number{float:right;color:#ccc;margin-top:-$checkout_field-padding}
 
 @media all and (min-width: 600px){
-	.order-summary{border-radius:$checkout_border-radius;border:1px solid #dadada;margin-bottom:2em}
+	.order-summary{border-radius:$checkout_border-radius;border:1px $checkout_border-style #dadada;margin-bottom:2em}
 	.order-summary .product-list .product{padding-top:1.5em;padding-bottom:1.5em}
 	.order-summary .product-list .product:first-child{margin-top:-1.5em}
 	.order-summary .product-list .product:last-child{margin-bottom:-1.5em}
@@ -816,7 +817,7 @@ td strong{font-weight:500;color:#777}
 .has-tooltip:hover .tooltip,.has-tooltip.tooltip--is-displayed .tooltip{visibility:visible;opacity:1;-webkit-transform:rotateX(0deg) scale(1);transform:rotateX(0deg) scale(1);pointer-events:auto}
 .tooltip{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;position:absolute;bottom:120%;left:50%;width:180px;margin:0 0 5px -90px;padding:.75em 1em;border-radius:5px;text-indent:0;white-space:normal;font-style:normal;font-weight:normal;line-height:$tricky_var-line-height;text-align:center;color:#fff;display:block;visibility:hidden;pointer-events:none;z-index:200;opacity:0;-webkit-transition:all 0.3s cubic-bezier(0.3, 0, 0, 1.2);transition:all 0.3s cubic-bezier(0.3, 0, 0, 1.2);-webkit-transform:rotateX(20deg) scale(0.8);transform:rotateX(20deg) scale(0.8);-webkit-transform-origin:center 120%;-ms-transform-origin:center 120%;transform-origin:center 120%;font-size:11px;font-size:0.875rem;background:#424242}
 .rgba .tooltip{background:rgba(68,68,68,0.9)}
-.tooltip:after{content:"";position:absolute;top:100%;left:50%;margin-left:-7px;width:0;border:7px solid transparent;border-top:5px solid #333;border-top-color:rgba(68,68,68,0.9)}
+.tooltip:after{content:"";position:absolute;top:100%;left:50%;margin-left:-7px;width:0;border:7px $checkout_border-style transparent;border-top:5px $checkout_border-style #333;border-top-color:rgba(68,68,68,0.9)}
 
 @media all and (max-width: 599px){
 	.tooltip--left-on-mobile{left:-1em;margin-left:0;-webkit-transform-origin:15% 120%;-ms-transform-origin:15% 120%;transform-origin:15% 120%}
@@ -948,7 +949,7 @@ td strong{font-weight:500;color:#777}
 .js .btn.btn--inset:not(.btn--is-active),.js .btn.btn--inset:not(.btn--is-active):hover,.js .btn.btn--inset:not(.btn--is-active):focus,.js .btn.btn--inset:not(.btn--is-active):active{
 	background-color:$checkout_btn-inset-bg-color;
 	color:$checkout_btn-inset-color;
-	border:1px solid $checkout_btn-inset-color;
+	border:1px $checkout_border-style $checkout_btn-inset-color;
 	margin:-1px -1px 0 0;
 }
 
@@ -985,7 +986,7 @@ table+.call-to-action,.section__blank-slate+.call-to-action{margin-top:1em}
 .call-to-action .back{text-align:center;padding-top:1em;display:block}
 
 @media all and (max-width: 599px){
-	.call-to-action label{display:block;position:relative;border:1px solid #d8d8d8;border-radius:$checkout_border-radius;text-align:left;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;padding:1.125em 1em 1em 3em;margin:0 0 1em}
+	.call-to-action label{display:block;position:relative;border:1px $checkout_border-style #d8d8d8;border-radius:$checkout_border-radius;text-align:left;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;padding:1.125em 1em 1em 3em;margin:0 0 1em}
 	.chrome .call-to-action label,.safari .call-to-action label{padding-left:4.5em;padding-bottom:1.125em}
 	.call-to-action label input[type='checkbox']{position:absolute;left:1em;top:1em}
 }
@@ -1113,7 +1114,7 @@ table+.call-to-action,.section__blank-slate+.call-to-action{margin-top:1em}
 /*===================================== Modals ====================================*/
 .modal{background:$checkout_main-bg-color;color:$tricky_var-primary-color;}
 .modal__close{position:absolute;right:0;top:0;padding:.5em .75em;color:#ccc;color:rgba(0,0,0,0.2);font-size:33px;font-size:2.5rem}
-.modal__close:hover{color:#999}.policy-header{margin-bottom:1.5em;border-bottom:1px solid #ededed;padding-bottom:1em}
+.modal__close:hover{color:#999}.policy-header{margin-bottom:1.5em;border-bottom:1px $checkout_border-style #ededed;padding-bottom:1em}
 .policy-header .policy__print-link{display:none}
 .policy-header__shop-name{color:$checkout_shop-name-color}
 .policy-body p{color:$tricky_var-primary-color;font-size:$checkout_base-font-size;font-weight:normal;}
@@ -1139,10 +1140,10 @@ table+.call-to-action,.section__blank-slate+.call-to-action{margin-top:1em}
 
 
 /*=========================Alternative Payment Methods ============================*/
-.alternative-payment-methods{padding:1.5em 1.5em 2em;margin-bottom:1em;border-bottom:1px solid #ededed;position:relative;text-align:center}
-.alternative-payment-methods .or{content:"OR";text-align:center;display:block;min-width:18px;padding:0 .5em;margin:-14px 0 0 -14px;position:absolute;top:100%;left:50%;background-color:#fff;border:1px solid #e5e5e5;border-radius:2em;font-size:11px;color:#999;line-height:$tricky_var-line-height;-webkit-box-shadow:0 0 0 8px #fff;box-shadow:0 0 0 8px #fff}
+.alternative-payment-methods{padding:1.5em 1.5em 2em;margin-bottom:1em;border-bottom:1px $checkout_border-style #ededed;position:relative;text-align:center}
+.alternative-payment-methods .or{content:"OR";text-align:center;display:block;min-width:18px;padding:0 .5em;margin:-14px 0 0 -14px;position:absolute;top:100%;left:50%;background-color:#fff;border:1px $checkout_border-style #e5e5e5;border-radius:2em;font-size:11px;color:#999;line-height:$tricky_var-line-height;-webkit-box-shadow:0 0 0 8px #fff;box-shadow:0 0 0 8px #fff}
 .alternative-payment-methods p{display:block;text-align:center}
-.alternative-payment-methods__btn{border-radius:$checkout_border-radius;display:inline-block;border:1px solid #2a9dcc;padding:.6em .75em .4em;vertical-align:-0.5em;margin-left:.5em}
+.alternative-payment-methods__btn{border-radius:$checkout_border-radius;display:inline-block;border:1px $checkout_border-style #2a9dcc;padding:.6em .75em .4em;vertical-align:-0.5em;margin-left:.5em}
 .alternative-payment-methods__btn img{height:21px}
 
 @media all and (min-width: 600px){
@@ -1196,7 +1197,7 @@ table+.call-to-action,.section__blank-slate+.call-to-action{margin-top:1em}
 
 .section{
 	padding:1.5em;
-	border-top:1px solid $checkout_section-border-color;
+	border-top:1px $checkout_border-style $checkout_section-border-color;
 	zoom:1
 }
 .section:after,.section:before{content:"";display:table}
