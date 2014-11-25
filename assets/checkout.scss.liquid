@@ -102,6 +102,7 @@ $fallback_selection-color : #FFFFFF;
 
 /*==============================FORM VARS ==============================================/*
 /* label color */						$checkout_label-color:{{ settings.checkout_label-color }};
+/* Placeholder color */					$checkout_placeholder-color:{{ settings.checkout_placeholder-color }};
 /* fieldset border color */				$checkout_fieldset-border-color:{{ settings.checkout_fieldset-border-color }};
 /* fieldset background color */			$checkout_fieldset-bg-color:{{ settings.checkout_fieldset-bg-color }};
 /* field focus color */					$checkout_field_focus-color:{{ settings.checkout_field_focus-color }};
@@ -233,10 +234,10 @@ input[type="text"]:-webkit-autofill,input[type="tel"]:-webkit-autofill,input[typ
 	-webkit-box-shadow:0 0 0 50px #fff inset;
 	box-shadow:0 0 0 50px #fff inset
 }
-::-webkit-input-placeholder{color:$checkout_label-color}
-:-moz-placeholder{color:$checkout_label-color;}
-::-moz-placeholder{color:$checkout_label-color;}
-:-ms-input-placeholder{color:$checkout_label-color}
+::-webkit-input-placeholder{color:$checkout_placeholder-color;}
+:-moz-placeholder{color:$checkout_placeholder-color;}
+::-moz-placeholder{color:$checkout_placeholder-color;}
+:-ms-input-placeholder{color:$checkout_placeholder-color;}
 
 .boxsizing select{padding-right:2em}
 

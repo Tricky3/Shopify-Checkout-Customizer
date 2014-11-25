@@ -4,55 +4,48 @@
   <table>
 
     <tr>
-      <td colspan="6">
-        <h3 class="heading">Global Settings <span class="note">Affects just about everything</span></h3>
-      </td>
+      <td colspan="6"><h3 class="heading">Global Settings <span class="note">Affects just about everything</span></h3></td>
     </tr>
     
     <tr>
-    <th>
+      <th>
         <label for="checkout_base-font-size">Base Font Size</label>
         <small>Insert a value that matches your shop's general configuration</small>
-    </th>
-    <td colspan="2"><input type="text" id="checkout_base-font-size" name="checkout_base-font-size" value="13px" /></td>
-     <th>
-      <label for="checkout_border-radius">Border Radius</label>
-      <small>Border Radius values for inputs and buttons</small>
-     </th>
-    
+      </th>
+      <td colspan="2"><input type="text" id="checkout_base-font-size" name="checkout_base-font-size" value="13px" /></td>
+      <th>
+        <label for="checkout_border-radius">Border Radius</label>
+        <small>Border Radius values for inputs and buttons</small>
+      </th>
       <td colspan="2"><input type="text" id="checkout_border-radius" name="checkout_border-radius" value="0" /></td>
     </tr>
 
-
     <tr>
-    <th>
+      <th>
         <label for="checkout_desktop-wrap">Desktop View: Max width</label>
         <small>Insert a value that matches your shop's general configuration</small>
-    </th>
-    <td colspan="2"><input type="text" id="checkout_desktop-wrap" name="checkout_desktop-wrap" value="1060px" /></td>
-     <th>
-      <label for="checkout_desktop-wrap-padding">Desktop View: Padding Value for the External Wrap</label>
-      <small>configure the outermost padding value</small>
-     </th>
-    
+      </th>
+      <td colspan="2"><input type="text" id="checkout_desktop-wrap" name="checkout_desktop-wrap" value="1060px" /></td>
+      <th>
+        <label for="checkout_desktop-wrap-padding">Desktop View: Padding Value for the External Wrap</label>
+        <small>configure the outermost padding value</small>
+      </th>
       <td colspan="2"><input type="text" id="checkout_desktop-wrap-padding" name="checkout_desktop-wrap-padding" value="0 2%" /></td>
     </tr>
 
-
-
     <tr>
-      <td colspan="6">
-        <h3 class="heading">Header <span class="note">Uppermost section of the Checkout Page</span></h3>
-      </td>
+      <td colspan="6"><h3 class="heading">Header <span class="note">Uppermost section of the Checkout Page</span></h3></td>
     </tr>
 
     <tr class="horizontal">
-      <th><label for="center_header_elems">Center Header Elements</label><small>Choose between a center-aligned layout <br/>or a left-aligned one</small></th>    
+      <th>
+        <label for="center_header_elems">Center Header Elements</label>
+        <small>Choose between a center-aligned layout <br/>or a left-aligned one</small>
+      </th>
       <td colspan="6"><input type="checkbox" name="center_header_elems" value="0" /></td>
     </tr>
 
     <tr>
-
       <th>
         <label for="checkout_header-background-color">Header Background Color Fill</label>
         <small>Background color for the header area</small>
@@ -76,20 +69,16 @@
           <option value="checkout_logo.png">Use a custom image </option>
         </select>
       </td>
-
       <th>
         <label for="checkout_logo.png">Custom Shop Name Image</label>
         <small>For best results, we recommend uploading a transparent background image.</small>
       </th>
-      <td>
-        <input id="checkout_logo.png" name="checkout_logo.png" type="file"/>
-      </td>
-
+      <td><input id="checkout_logo.png" name="checkout_logo.png" type="file"/></td>
       <th>
         <label for="checkout_shop-name-color">Shop Name Text Color</label>
         <small>In the case no image is used for the Shop Logo</small>
       </th>
-        <td colspan="2"><input type="text" id="checkout_shop-name-color" name="checkout_shop-name-color" class="color" value="#ffffff"/></td>
+      <td colspan="2"><input type="text" id="checkout_shop-name-color" name="checkout_shop-name-color" class="color" value="#ffffff"/></td>
     </tr>
 
     <tr class="horizontal">
@@ -97,14 +86,11 @@
         <label for="checkout_headline">Tagline</label>
         <small>Add an explanatory/prompt line on the header</small>
       </th>
-       <td colspan="1">
-        <input id="checkout_headline" name="checkout_headline"/>
-      </td>
+      <td colspan="1"><input id="checkout_headline" name="checkout_headline"/></td>
       <th><label for="checkout_shop-desc-font-size">Tagline Font Size</label></th>
       <td colspan="1"><input type="text" id="checkout_shop-desc-font-size" name="checkout_shop-desc-font-size" value=".8em"/></td>
       <th><label for="checkout_shop-desc-color">Tagline Color</label></th>
       <td colspan="1"><input type="text" id="checkout_shop-desc-color" name="checkout_shop-desc-color" class="color" value="#ffffff"/></td>
-      
     </tr>
 
     <tr>
@@ -166,14 +152,16 @@
     
     <tr>
       <th><label for="checkout_label-color">Label Color</label></th>
-      <td colspan="5"><input type="text" id="checkout_label-color" name="checkout_label-color" class="color" value="#777"/></td>
+      <td colspan="1"><input type="text" id="checkout_label-color" name="checkout_label-color" class="color" value="#777"/></td>
+      <th><label for="checkout_placeholder-color">Placeholder Color</label></th>
+      <td colspan="3"><input type="text" id="checkout_placeholder-color" name="checkout_placeholder-color" class="color" value="#777"/></td>
     </tr>
     
     <tr>
       <th><label for="checkout_fieldset-bg-color">Fieldset Background Color</label></th>
       <td colspan="1"><input type="text" id="checkout_fieldset-bg-color" name="checkout_fieldset-bg-color" class="color" value="#fff"/></td>
       <th><label for="checkout_fieldset-border-color">Fieldset Border Color</label></th>
-      <td colspan="1"><input type="text" id="checkout_fieldset-border-color" name="checkout_fieldset-border-color" class="color" value="#d8d8d8"/></td>
+      <td colspan="3"><input type="text" id="checkout_fieldset-border-color" name="checkout_fieldset-border-color" class="color" value="#d8d8d8"/></td>
      
     </tr>
 
@@ -182,28 +170,25 @@
       <td colspan="1"><input type="text" id="checkout_field_focus-color" name="checkout_field_focus-color" class="color" value="#6d6f71"/></td>
      
       <th><label for="checkout_field-padding">Field Padding</label></th>
-      <td colspan="1"><input type="text" id="checkout_field-padding" name="checkout_field-padding" value="1em" /></td>
+      <td colspan="3"><input type="text" id="checkout_field-padding" name="checkout_field-padding" value="1em" /></td>
     </tr>
 
     <tr>
       <th><label for="checkout_field-error-bg-color">Field Error : Background Color</label></th>
       <td colspan="1"><input type="text" id="checkout_field-error-bg-color" name="checkout_field-error-bg-color" class="color" value="#fff7f7"/></td>
       <th><label for="checkout_field-error-color">Field Error : Color</label></th>
-      <td colspan="1"><input type="text" id="checkout_field-error-color" name="checkout_field-error-color" class="color" value="#fff7f7"/></td>
+      <td colspan="3"><input type="text" id="checkout_field-error-color" name="checkout_field-error-color" class="color" value="#fff7f7"/></td>
     </tr>
 
     <tr>
       <th><label for="checkout_field-error-label-color">Field Error : Label </label></th>
       <td colspan="1"><input type="text" id="checkout_field-error-label-color" name="checkout_field-error-label-color" class="color" value="#fff7f7"/></td>
       <th><label for="checkout_field-error-placeholder-color">Field Error : Placeholder </label></th>
-      <td colspan="1"><input type="text" id="checkout_field-error-placeholder-color" name="checkout_field-error-placeholder-color" class="color" value="#fff7f7"/></td>
+      <td colspan="3"><input type="text" id="checkout_field-error-placeholder-color" name="checkout_field-error-placeholder-color" class="color" value="#fff7f7"/></td>
     </tr>
 
-
     <tr>
-      <td colspan="6">
-        <h3 class="heading">Order Summary <span class="note"> Right side of the checkout</span></h3>
-      </td>
+      <td colspan="6"><h3 class="heading">Order Summary <span class="note"> Right side of the checkout</span></h3></td>
     </tr>
 
     <tr>
@@ -237,8 +222,6 @@
       <td colspan="1"><input type="text" id="checkout_payment-due-currency-font-size" name="checkout_payment-due-currency-font-size" value="1.4em"/></td>
     </tr>
 
-
-
     <tr>
       <td colspan="6">
         <h3 class="heading"> Checkout Buttons <span> Look for "Base Styles" settings for additional settings</span></h3>
@@ -263,16 +246,12 @@
     <tr>
       <th><label for="checkout_btn-focus-bg-color">Button Focus : Background Color</label></th>
       <td colspan="1"><input type="text" id="checkout_btn-focus-bg-color" name="checkout_btn-focus-bg-color" class="color" value="697738" /></td>
-      
        <th><label for="checkout_btn-focus-color">Button Focus : Text Color</label></th>
-      <td colspan="1"><input type="text" id="checkout_btn-focus-color" name="checkout_btn-focus-color" class="color" value="FFFFFF" /></td>
+      <td colspan="3"><input type="text" id="checkout_btn-focus-color" name="checkout_btn-focus-color" class="color" value="FFFFFF" /></td>
     </tr>
 
-
      <tr>
-      <td colspan="6">
-        <h3>Inset Checkout Buttons<span> Changes section, discount and gift card button</span></h3>
-      </td>
+      <td colspan="6"><h3>Inset Checkout Buttons<span> Changes section, discount and gift card button</span></h3></td>
     </tr>
 
      <tr class="horizontal">
@@ -285,42 +264,21 @@
     </tr>
 
     <tr class="horizontal">
-       <th>
-        <label for="checkout_btn-inset-bg-color">Inset Buttons : Background Color</label>
-      </th>
-      <td>
-        <input id="checkout_btn-inset-bg-color" name="checkout_btn-inset-bg-color" class="color" value="#2a9dcc"/>
-      </td>
-      <th>
-        <label for="checkout_btn-inset-color">Inset Buttons : Color</label>
-      </th>
-      <td>
-        <input id="checkout_btn-inset-color" name="checkout_btn-inset-color" class="color" value="#2a9dcc"/>
-      </td>
+      <th><label for="checkout_btn-inset-bg-color">Inset Buttons : Background Color</label></th>
+      <td colspan="1"><input id="checkout_btn-inset-bg-color" name="checkout_btn-inset-bg-color" class="color" value="#2a9dcc"/></td>
+      <th><label for="checkout_btn-inset-color">Inset Buttons : Color</label></th>
+      <td colspan="3"><input id="checkout_btn-inset-color" name="checkout_btn-inset-color" class="color" value="#2a9dcc"/></td>
     </tr>
 
     <tr class="horizontal">
-       <th>
-        <label for="checkout_btn-inset-hover-bg-color">Inset Buttons : Hover State Background Color</label>
-      </th>
-      <td>
-        <input id="checkout_btn-inset-hover-bg-color" name="checkout_btn-inset-hover-bg-color" class="color" value="#2a9dcc"/>
-      </td>
-      <th>
-        <label for="checkout_btn-inset-hover-color">Inset Buttons : Hover State Color</label>
-      </th>
-      <td>
-        <input id="checkout_btn-inset-hover-color" name="checkout_btn-inset-hover-color" class="color" value="#2a9dcc"/>
-      </td>
+      <th><label for="checkout_btn-inset-hover-bg-color">Inset Buttons : Hover State Background Color</label></th>
+      <td colspan="1"><input id="checkout_btn-inset-hover-bg-color" name="checkout_btn-inset-hover-bg-color" class="color" value="#2a9dcc"/></td>
+      <th><label for="checkout_btn-inset-hover-color">Inset Buttons : Hover State Color</label></th>
+      <td colspan="3"><input id="checkout_btn-inset-hover-color" name="checkout_btn-inset-hover-color" class="color" value="#2a9dcc"/></td>
     </tr>
    
-    
-
-
     <tr>
-      <td colspan="6">
-        <h3 class="heading">Footer <span class="note">Lowermost Part of the Layout</span></h3>
-      </td>
+      <td colspan="6"><h3 class="heading">Footer <span class="note">Lowermost Part of the Layout</span></h3></td>
     </tr>
 
     <tr>
@@ -332,7 +290,10 @@
           <option value="capitalize">capitalize</option>
         </select>
       </td>
-      <th><label for="checkout_footer-link-separator">Footer Link Separator</label><small>Add a symbol that you wish to be displayed in-between the footer's navigation links (e.g. "|") </small></th>
+      <th>
+        <label for="checkout_footer-link-separator">Footer Link Separator</label>
+        <small>Add a symbol that you wish to be displayed in-between the footer's navigation links (e.g. "|") </small>
+      </th>
       <td colspan="2"><input type="text" id="checkout_footer-link-separator" name="checkout_footer-link-separator" value=" "/></td>
     </tr>
 
@@ -360,21 +321,16 @@
     </tr>
 
     <tr>
-      <td colspan="6">
-        <h3 class="heading">Custom CSS <span class="note">All that you can't eat</span></h3>
-      </td>
+      <td colspan="6"><h3 class="heading">Custom CSS <span class="note">All that you can't eat</span></h3></td>
     </tr>
 
-  <tr>
-    <th>
+    <tr>
+      <th>
         <label for="checkout_custom_css">Insert your custom magic here</label>
         <small>Leave empty if u ain't an adult</small>
-    </th>
-    <td colspan="6">
-        <textarea name="checkout_custom_css" cols="60" rows="5" id="checkout_custom_css" value="" />
-    </td>
-</tr>
+      </th>
+      <td colspan="6"><textarea name="checkout_custom_css" cols="60" rows="5" id="checkout_custom_css" value="" /></td>
+    </tr>
 
-</table>
-
+  </table>
 </fieldset>
