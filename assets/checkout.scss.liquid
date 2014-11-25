@@ -159,6 +159,7 @@ $fallback_selection-color : #FFFFFF;
 /*==============================WRAP VARS ==============================================/*
 /* desktop wrap */						$checkout_desktop-wrap:{{settings.checkout_desktop-wrap}};
 /* desktop wrap padding */				$checkout_desktop-wrap-padding:{{settings.checkout_desktop-wrap-padding}};
+/* wrap background color */				$checkout_wrap-bg-color:{{ settings.checkout_wrap-bg-color }};
 
 body, button, input, select, textarea {
   font-family: $tricky_var-font-stack;
@@ -490,7 +491,10 @@ td strong{font-weight:500;color:#777}
 ===================================================================================*/
 
 /*===============================Ever-present wraps================================*/
-.wrap{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.wrap{
+	-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
+	background: $checkout_wrap-bg-color;
+}
 
 @media all and (min-width: 600px){
 	.wrap{width:73%;padding:0 12.5%}
@@ -514,7 +518,10 @@ td strong{font-weight:500;color:#777}
 	position:relative;zoom:1;
 	overflow:hidden;
 	background:$checkout_header-background-color;
-	margin:$checkout_header-margin;
+}
+
+.header .wrap .shop{
+		margin:$checkout_header-margin;
 }
 
 {% if settings.checkout_header_bg != blank %}
