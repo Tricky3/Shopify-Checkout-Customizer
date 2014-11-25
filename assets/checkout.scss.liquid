@@ -508,8 +508,28 @@ td strong{font-weight:500;color:#777}
 }
 
 /*=========================== Header and shop ID [1.1] ============================*/
-.header{padding:$checkout_header-padding;position:relative;zoom:1;overflow:hidden;background:$checkout_header-background-color;}
-.cssgradients .header__backdrop {background:$checkout_header-background-color;}
+.header{
+	padding:$checkout_header-padding;
+	position:relative;zoom:1;
+	overflow:hidden;
+	background:$checkout_header-background-color;
+}
+
+{% if settings.checkout_header_bg != blank %}
+.cssgradients .header__backdrop {
+    background-image: url( {{'checkout_header_bg.png' | asset_url }});
+    background-position: center top;
+    background-repeat: repeat;
+    background-size: auto auto;
+}
+{% else %}
+.cssgradients .header__backdrop {
+	background:$checkout_header-background-color;
+}
+{% endif %}
+
+
+
 .header .icon--lock{display: none;}
 .shop{
 	width: 100%;

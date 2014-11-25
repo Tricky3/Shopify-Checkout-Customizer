@@ -53,15 +53,7 @@
         <label for="center_header_elems">Center Header Elements</label>
         <small>Choose between a center-aligned layout <br/>or a left-aligned one</small>
       </th>
-      <td colspan="6"><input type="checkbox" name="center_header_elems" value="0" /></td>
-    </tr>
-
-    <tr>
-      <th>
-        <label for="checkout_header-background-color">Header Background Color Fill</label>
-        <small>Background color for the header area</small>
-      </th>
-      <td colspan="2"><input type="text" id="checkout_header-background-color" name="checkout_header-background-color" class="color" value="#ffffff"/></td>
+      <td colspan="1"><input type="checkbox" name="center_header_elems" value="0" /></td>
       <th>
         <label for="checkout_header-padding">Header Padding Values</label>
         <small>Individual settings or Shorthand Property<br/><a target="_blank" href="http://www.w3schools.com/css/css_padding.asp">What does this mean?</a> </small>
@@ -71,7 +63,7 @@
 
     <tr class="horizontal">
       <th>
-        <label for="checkout_logo">Shop Name</label>
+        <label for="checkout_logo">Shop Name ( Company Logo )</label>
         <small>Choose between uploading a custom Image or using plain text</small>
       </th>
       <td>
@@ -90,6 +82,29 @@
         <small>In the case no image is used for the Shop Logo</small>
       </th>
       <td colspan="2"><input type="text" id="checkout_shop-name-color" name="checkout_shop-name-color" class="color" value="#ffffff"/></td>
+    </tr>
+
+    <tr>
+      <th>
+        <label for="checkout_header_bg">Header background</label>
+        <small>Choose between using a custom image (repeating and seamless motif)<br/> or using a flat color as a background for the header area</small>
+      </th>
+      <td>
+        <select id="checkout_header_bg" name="checkout_header_bg">
+          <option value="" selected="">No image, just flat color</option>
+          <option value="checkout_header_bg.png">Use a custom image </option>
+        </select>
+      </td>
+      <th>
+        <label for="checkout_header_bg.png">Custom Header Background Image</label>
+        <small>For best results, we recommend uploading a seamless motif image.</small>
+      </th>
+      <td><input id="checkout_header_bg.png" name="checkout_header_bg.png" type="file"/></td>
+      <th>
+        <label for="checkout_header-background-color">Header Background Color Fill</label>
+        <small>Background color for the header area</small>
+      </th>
+      <td colspan="2"><input type="text" id="checkout_header-background-color" name="checkout_header-background-color" class="color" value="#ffffff"/></td>
     </tr>
 
     <tr class="horizontal">
