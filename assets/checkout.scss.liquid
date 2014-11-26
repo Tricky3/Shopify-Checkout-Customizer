@@ -136,9 +136,11 @@ $fallback_selection-color : #FFFFFF;
 /* Currency Font Size */				$checkout_payment-due-currency-font-size:{{ settings.checkout_payment-due-currency-font-size }};
 /*==============================LAYOUT VARS ==============================================/*
 /* header background color*/			$checkout_header-background-color:{{ settings.checkout_header-background-color }};
+/* header wrap background color */		$checkout_header-wrap-background-color:{{ settings.checkout_header-wrap-background-color }};
 /* header padding */					$checkout_header-padding:{{ settings.checkout_header-padding }};
 /* header margin */						$checkout_header-margin:{{ settings.checkout_header-margin }};
 /* shop name color */					$checkout_shop-name-color:{{ settings.checkout_shop-name-color }};
+/* logo image max-width */				$checkout_shop-name-max-width:{{ settings.checkout_shop-name-max-width }};
 /* order summary background-color */	$checkout_order-summary-background-color:{{ settings.checkout_order-summary-background-color }};
 /* order summary border-color */		$checkout_order-summary-border-color:{{ settings.checkout_order-summary-border-color }};
 /* order summary color */				$checkout_order-summary-color:{{ settings.checkout_order-summary-color }};
@@ -503,7 +505,11 @@ td strong{font-weight:500;color:#777}
 }
 
 .footer .wrap{
-	background: $checkout_footer-wrap-bg-color;
+	background:$checkout_footer-wrap-bg-color;
+}
+
+.header .wrap {
+	background:$checkout_header-wrap-background-color;
 }
 
 @media all and (min-width: 600px){
@@ -598,7 +604,7 @@ td strong{font-weight:500;color:#777}
 
 @media all and (min-width: 600px){
 	.header{padding:$checkout_header-padding;}
-	.shop__logo{max-width:200px}
+	.shop__logo{max-width:$checkout_shop-name-max-width;}
 	.shop__desc {
     {% if settings.center_header_elems %}
 		float: none;

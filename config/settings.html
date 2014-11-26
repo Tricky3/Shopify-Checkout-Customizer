@@ -31,6 +31,10 @@
       <td colspan="3"><input type="text" id="checkout_border-radius" name="checkout_border-radius" value="0" /></td>
     </tr>
 
+     <tr>
+      <td colspan="6"><h3 class="heading">Desktop View: Color Scheme and Layout settings <span class="note">Header, Main and Footer Configurations (Dsktop View) </span></h3></td>
+    </tr>
+    
     <tr>
       <th>
         <label for="checkout_desktop-wrap">Desktop View: Max width</label>
@@ -41,13 +45,45 @@
         <label for="checkout_desktop-wrap-padding">Desktop View: Padding Value for the External Wrap</label>
         <small>configure the outermost padding value</small>
       </th>
-      <td colspan="1"><input type="text" id="checkout_desktop-wrap-padding" name="checkout_desktop-wrap-padding" value="0 2%" /></td>
-      <th>
-        <label for="checkout_wrap-bg-color">Wrap Background Color</label>
-        <small>Colors the external Container</small>
-      </th>
-      <td colspan="1"><input type="text" id="checkout_wrap-bg-color" name="checkout_wrap-bg-color" class="color" value="#ffffff"/></td>
+      <td colspan="3"><input type="text" id="checkout_desktop-wrap-padding" name="checkout_desktop-wrap-padding" value="0 2%" /></td>
     </tr>
+
+     <tr>
+      <th>
+        <label for="checkout_header-background-color">Header Background Color Fill</label>
+        <small>Colorfills the entire header area</small>
+      </th>
+      <td colspan="1"><input type="text" id="checkout_header-background-color" name="checkout_header-background-color" class="color" value="#ffffff"/></td>
+      <th>
+        <label for="checkout_header-wrap-background-color">Header Background Color Fill</label>
+        <small>Colorfills the external Container of the header area</small>
+      </th>
+      <td colspan="3"><input type="text" id="checkout_header-wrap-background-color" name="checkout_header-wrap-background-color" class="color" value="#ffffff"/></td>
+
+    </tr>
+
+    <tr>
+      <th>
+        <label for="checkout_main-bg-color">Main Background Color</label>
+        <small>Colorfills the entire area for the Main Part of the Layout</small>
+      </th>
+      <td colspan="1"><input type="text" id="checkout_main-bg-color" name="checkout_main-bg-color" class="color" value="#FFFFFF"/></td>
+
+      <th>
+        <label for="checkout_wrap-bg-color">Main Wrap Background Color</label>
+        <small>Colorfills the external Container for the Main Part of the Layout</small>
+      </th>
+      <td colspan="3"><input type="text" id="checkout_wrap-bg-color" name="checkout_wrap-bg-color" class="color" value="#ffffff"/></td>
+    </tr>
+
+     <tr>
+      <th><label for="checkout_footer-bg-color">Footer Background Color Fill</label></th>
+      <td colspan="1"><input type="text" id="checkout_footer-bg-color" name="checkout_footer-bg-color" class="color" value="#fff"/></td>
+      <th><label for="checkout_footer-wrap-bg-color">Footer Wrap Background Color</label></th>
+      <td colspan="3"><input type="text" id="checkout_footer-wrap-bg-color" name="checkout_footer-wrap-bg-color" class="color" value="#e5e5e5"/></td>
+    </tr>
+
+   
 
     <tr>
       <td colspan="6"><h3 class="heading">Header <span class="note">Uppermost section of the Checkout Page</span></h3></td>
@@ -85,10 +121,18 @@
       </th>
       <td><input id="checkout_logo.png" name="checkout_logo.png" type="file"/></td>
       <th>
+        <label for="checkout_shop-name-max-width">Shop Name Image </br> Max Width</label>
+        <small>Prepare your logo for retina-display enabled devices</small>
+      </th>
+      <td colspan="2"><input type="text" id="checkout_shop-name-max-width" name="checkout_shop-name-max-width" value="200px"/></td>
+    </tr>
+
+    <tr>
+      <th>
         <label for="checkout_shop-name-color">Shop Name Text Color</label>
         <small>In the case no image is used for the Shop Logo</small>
       </th>
-      <td colspan="2"><input type="text" id="checkout_shop-name-color" name="checkout_shop-name-color" class="color" value="#ffffff"/></td>
+      <td colspan="6"><input type="text" id="checkout_shop-name-color" name="checkout_shop-name-color" class="color" value="#ffffff"/></td>
     </tr>
 
     <tr>
@@ -106,12 +150,8 @@
         <label for="checkout_header_bg.png">Custom Header Background Image</label>
         <small>For best results, we recommend uploading a seamless motif image.</small>
       </th>
-      <td><input id="checkout_header_bg.png" name="checkout_header_bg.png" type="file"/></td>
-      <th>
-        <label for="checkout_header-background-color">Header Background Color Fill</label>
-        <small>Background color for the header area</small>
-      </th>
-      <td colspan="2"><input type="text" id="checkout_header-background-color" name="checkout_header-background-color" class="color" value="#ffffff"/></td>
+      <td colspan="3"><input id="checkout_header_bg.png" name="checkout_header_bg.png" type="file"/></td>
+      
     </tr>
 
     <tr class="horizontal">
@@ -166,10 +206,7 @@
       </td>
     </tr>
 
-    <tr>
-      <th><label for="checkout_main-bg-color">Main Background Color</label></th>
-      <td colspan="5"><input type="text" id="checkout_main-bg-color" name="checkout_main-bg-color" class="color" value="#FFFFFF"/></td>
-    </tr>
+    
 
     <tr>
       <th><label for="checkout_section-border-color">Section Border Color</label>
@@ -342,12 +379,7 @@
       <td colspan="1"><input type="text" id="checkout_footer-text-color" name="checkout_footer-text-color" class="color" value="#999"/></td>
     </tr>
 
-     <tr>
-      <th><label for="checkout_footer-bg-color">Footer Background Color Fill</label></th>
-      <td colspan="1"><input type="text" id="checkout_footer-bg-color" name="checkout_footer-bg-color" class="color" value="#fff"/></td>
-      <th><label for="checkout_footer-wrap-bg-color">Footer Wrap Background Color</label></th>
-      <td colspan="3"><input type="text" id="checkout_footer-wrap-bg-color" name="checkout_footer-wrap-bg-color" class="color" value="#e5e5e5"/></td>
-    </tr>
+    
 
     <tr>
       <th><label for="checkout_footer-href-color">Footer Link Color</label></th>

@@ -18,9 +18,11 @@ is doubtlessly a big step towards for the Shopify Platform.
 <li>Desktop View: Padding Value for the External Wrap configure the outermost padding value </li>	
 <li>Wrap Background Color</li>
 <li>Center Header Elements : Choose between a center-aligned layout or a left-aligned one </li>	
+<li>Different Background Colors for Header, Main and Footer Area </li>
 <li>Header Padding </li>
 <li>Header Margin</li>
 <li>Shop Name ( Company Logo ) Choose between uploading a custom Image or using plain text 	</li>
+<li>Shop Logo Image : max width</li>
 <li>Shop Name Text Color (In the case no image is used for the Shop Logo)</li>
 <li>Header background : Choose between using a custom image (repeating and seamless motif) or using a flat color as a background for the header area 	</li>
 <li>Custom Header Background Image </li>
