@@ -37,16 +37,44 @@
     
     <tr>
       <th>
-        <label for="checkout_desktop-wrap">Desktop View: Max width</label>
+        <label for="checkout_desktop-wrap">Wrapped Area: Max width</label>
         <small>Insert a value that matches your shop's general configuration</small>
       </th>
       <td colspan="1"><input type="text" id="checkout_desktop-wrap" name="checkout_desktop-wrap" value="1060px" /></td>
       <th>
-        <label for="checkout_desktop-wrap-padding">Desktop View: Padding Value for the External Wrap</label>
+        <label for="checkout_desktop-wrap-padding">Wrapped Area : Padding</label>
         <small>configure the outermost padding value</small>
       </th>
       <td colspan="3"><input type="text" id="checkout_desktop-wrap-padding" name="checkout_desktop-wrap-padding" value="0 2%" /></td>
     </tr>
+
+    <tr>
+      <th>
+        <label for="checkout_header-padding">Header Padding</label>
+        <small>Padding Value for the entire Header Area </small>
+      </th>
+      <td colspan="1"><input type="text" id="checkout_header-padding" name="checkout_header-padding" value="12px 0" /></td>
+      <th>
+        <label for="checkout_header-margin">Header Wrap Margin</label>
+        <small>Margins for the Header's Wrapped Area </small>
+      </th>
+      <td colspan="3"><input type="text" id="checkout_header-margin" name="checkout_header-margin" value="0" /></td>
+    </tr>
+
+    <tr>
+      <th>
+        <label for="checkout_footer-padding">Footer Padding</label>
+        <small>Padding Value for the entire Footer Area </small>
+      </th>
+      <td colspan="1"><input type="text" id="checkout_footer-padding" name="checkout_footer-padding" value="1.5em"/></td>
+      <th>
+        <label for="checkout_footer-fake-margin">Footer Wrap Margin</label>
+        <small>Margins for the Footer's Wrapped Area</small>
+      </th>
+      <td colspan="3"><input type="text" id="checkout_footer-fake-margin" name="checkout_footer-fake-margin" value="0"/></td>
+    </tr>
+
+
 
      <tr>
       <th>
@@ -95,14 +123,9 @@
         <small>Choose between a center-aligned layout <br/>or a left-aligned one</small>
       </th>
       <td colspan="1"><input type="checkbox" name="center_header_elems" value="0" /></td>
-      <th>
-        <label for="checkout_header-padding">Header Padding</label>
-        <small>Individual settings or Shorthand Property<br/><a target="_blank" href="http://www.w3schools.com/css/css_padding.asp">What does this mean?</a> </small>
-      </th>
-      <td colspan="1"><input type="text" id="checkout_header-padding" name="checkout_header-padding" value="12px 0" /></td>
-      <th><label for="checkout_header-margin">Header Margin</label></th>
-      <td colspan="1"><input type="text" id="checkout_header-margin" name="checkout_header-margin" value="0" /></td>
     </tr>
+    
+    
 
     <tr class="horizontal">
       <th>
@@ -373,10 +396,8 @@
      <tr>
       <th><label for="checkout_footer-font-size">Footer Font Size</label></th>
       <td colspan="1"><input type="text" id="checkout_footer-font-size" name="checkout_footer-font-size" value="11px"/></td>
-      <th><label for="checkout_footer-padding">Footer Padding</label></th>
-      <td colspan="1"><input type="text" id="checkout_footer-padding" name="checkout_footer-padding" value="1.5em"/></td>
       <th><label for="checkout_footer-text-color">Footer Text Color</label></th>
-      <td colspan="1"><input type="text" id="checkout_footer-text-color" name="checkout_footer-text-color" class="color" value="#999"/></td>
+      <td colspan="3"><input type="text" id="checkout_footer-text-color" name="checkout_footer-text-color" class="color" value="#999"/></td>
     </tr>
 
     
