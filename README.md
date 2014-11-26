@@ -1,7 +1,7 @@
 User-Configurable Shopify Responsive Checkout
 =============================================
 Reset for the new Shopify Responsive Checkout Styles and extension to provide configuration panel via Theme Settings
-
+<p>Before attempting the customizations below, ensure that you have <strong><a href="/manual/configuration/store-customization/page-specific/checkout-page/how-to-upgrade-to-responsive-checkout">upgraded to Responsive Checkout</a></strong>.</p>
 <a href="http://www.shopify.com/blog/15714308-introducing-responsive-checkout">The New Responsive Checkout from Shopify</a> 
 is doubtlessly a big step towards for the Shopify Platform. 
 
