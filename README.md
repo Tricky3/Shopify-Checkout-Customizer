@@ -1,12 +1,11 @@
-Responsive Checkout :: Shopify Options Unleashed
-================================
-
-Resetting the new Shopify Responsive Checkout Styles
+User-Configurable Shopify Responsive Checkout
+=============================================
+Reset for the new Shopify Responsive Checkout Styles and extension to provide configuration panel via Theme Settings
 
 <a href="http://www.shopify.com/blog/15714308-introducing-responsive-checkout">The New Responsive Checkout from Shopify</a> 
 is doubtlessly a big step towards for the Shopify Platform. 
 
-<p>This is a Master Reset for your Shopify Checkout Styles, substituting the default Checkout settings in the admin panel, giving you many more customizable options to match your template! The Shopify Checkout reset makes it easy for you to add design customizations on the <strong>Customize theme</strong> page of your admin without any knowledge of HTML, CSS, or Javascript.</p>
+<p>This is a Master Reset for your Shopify Checkout Styles, substituting the default Checkout settings in the configuration panel, giving you many more customizable options to match your template! The Shopify Checkout reset makes it easy for you to add design customizations on the <strong>Customize theme</strong> page of your admin without any knowledge of HTML, CSS, or Javascript.</p>
 
 <h1>Reset Options :: Unleashed.</h1>
 
