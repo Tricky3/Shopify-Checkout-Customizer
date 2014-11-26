@@ -81,4 +81,8 @@ is doubtlessly a big step towards for the Shopify Platform.
 </ul>
 
 
-<h1>Use:</h1>
+<h2>Use:</h2>
+<ol>
+<li>Copy the "assets" folder to your Shopify theme. checkout.scss.liquid will reset the native scss file Shopify delivers. This action will ONLY affect your checkout page</li>
+<li> Copy the new fieldset contained on the config/settings.html and paste it on your own settings.html file. This action will substitute the default "Checkout" panel with the "Checkout unleashed" one. 
+</ol>
