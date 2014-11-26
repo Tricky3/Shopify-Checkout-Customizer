@@ -88,5 +88,5 @@ is doubtlessly a big step towards for the Shopify Platform.
 <li> Copy the new fieldset contained on the config/settings.html and paste it on your own settings.html file. This action will substitute the default "Checkout" panel with the "Checkout unleashed" one. 
 </ol>
 
-<h2>Extension Combatibility</h2>
+<h2>Extension Compatibility</h2>
 Made to seamlessly integrate with <a href="https://github.com/rickydazla/Tricky3eme">Tricky3eme</a> , but it can also work as a stand-alone extension on any Shopify theme. 
