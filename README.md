@@ -1,4 +1,4 @@
-Shopify-Responsive-Checkout-Unleashed
+Responsive Checkout :: Shopify Options Unleashed
 ================================
 
 Resetting the new Shopify Responsive Checkout Styles
