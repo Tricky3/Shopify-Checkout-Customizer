@@ -8,7 +8,7 @@ is doubtlessly a big step towards for the Shopify Platform.
 
 <p>This is a Master Reset for your Shopify Checkout Styles, substituting the default Checkout settings in the admin panel, giving you many more customizable options to match your template! The Shopify Checkout reset makes it easy for you to add design customizations on the <strong>Customize theme</strong> page of your admin without any knowledge of HTML, CSS, or Javascript.</p>
 
-<h1>Colour schemes for Checkout fields</li>
+<h1>Colour schemes for Checkout fields</h1>
 
 <ul>
 <li>Checkout Settings : Unleashed Configure the new Responsive Checkout of shopify, all you can eat.</li>
