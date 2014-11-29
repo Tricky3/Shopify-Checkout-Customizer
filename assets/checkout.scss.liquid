@@ -575,7 +575,7 @@ td strong{font-weight:500;color:#777}
 .shop{
 	width: 100%;
 	/* center the header optional */		
-	{% if settings.center_header_elems %}
+	{% if settings.checkout_center_header_elems %}
 		float: none;
   		text-align: center;
 	{% endif %}
@@ -587,7 +587,7 @@ td strong{font-weight:500;color:#777}
 .shop__desc {
     cursor: default;
 
-    {% if settings.center_header_elems %}
+    {% if settings.checkout_center_header_elems %}
 		float: none;
 		margin-top:10px;
 	{% else %}
@@ -602,7 +602,7 @@ td strong{font-weight:500;color:#777}
 .rgba .shop__desc{color:$checkout_shop-desc-color;}
 .shop__logo{
 
-	{% if settings.center_header_elems %}
+	{% if settings.checkout_center_header_elems %}
 		 margin: 0 auto;
   	{% else %}
 		float: left;
@@ -611,7 +611,7 @@ td strong{font-weight:500;color:#777}
 
 }
 .shop__logo+.shop__desc{
-	{% if settings.center_header_elems %}
+	{% if settings.checkout_center_header_elems %}
 		margin-top:10px;
 	{% else %}
 		margin-top:0;
@@ -622,7 +622,7 @@ td strong{font-weight:500;color:#777}
 	.header{padding:$checkout_header-padding;}
 	.shop__logo{max-width:$checkout_shop-name-max-width;}
 	.shop__desc {
-    {% if settings.center_header_elems %}
+    {% if settings.checkout_center_header_elems %}
 		float: none;
 		margin-top:10px;
 	{% else %}
@@ -638,7 +638,7 @@ td strong{font-weight:500;color:#777}
 @media screen and (min-width: 1000px){
 	.header{padding:$checkout_header-padding;}
 	.shop__desc {
-    {% if settings.center_header_elems %}
+    {% if settings.checkout_center_header_elems %}
 		float: none;
 		margin-top:10px;
 	{% else %}
