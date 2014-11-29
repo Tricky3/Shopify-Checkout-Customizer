@@ -394,6 +394,74 @@
       <td colspan="3"><input type="text" id="checkout_footer-href-hover-color" name="checkout_footer-href-hover-color" class="color" value="#2486ae"/></td>
     </tr>
 
+    <tr class="horizontal">
+      <td colspan="6"><h3 class="heading">Gift Cards and Discounts Settings <span class="note">Add to the visibility of these Features during your checkout</span></h3></td>
+    </tr>
+
+    <tr class="horizontal">
+     <th>
+        <label for="checkout_show_giftcard_msg">Gift Cards Notice ,right from the start</label>
+        <small>Display a gift card notice during the first step of the checkout process</small>
+      </th>
+      <td colspan="6"><input type="checkbox" name="checkout_show_giftcard_msg" value="0" /></td>
+    </tr>
+
+    <tr>
+      <th>
+        <label for="checkout_giftcard-msg">Gift Card Message</label>
+        <small>Tip: include newlines in the generated content by writing the "\A" escape sequence.<br/>Add a questionmark by using "\003F".</small>
+      </th>
+      <td colspan="3">
+        <input class="text long" type="text" id="checkout_giftcard-msg" name="checkout_giftcard-msg" value="Have a Gift Card\003F\A\A You\'ll have an opportunity to enter your Gift Card code next during Checkout."/>
+      </td>
+      <th><label for="checkout_giftcard-txt-transform">Gift Card Text Transform</label></th>
+      <td colspan="1"><select name="checkout_giftcard-txt-transform" id="checkout_giftcard-txt-transform">
+          <option value="none" selected="none">none</option>
+          <option value="uppercase">uppercase</option>
+          <option value="lowercase">lowercase</option>
+          <option value="capitalize">capitalize</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <th><label for="checkout_giftcard-font-size">Gift Card Font Size</label></th>
+      <td colspan="1">
+        <input type="text" id="checkout_giftcard-font-size" name="checkout_giftcard-font-size" value="13px"/>
+      </td>
+      <th><label for="checkout_giftcard-txt-color">Gift Card Text Color</label></th>
+      <td colspan="1">
+        <input type="text" id="checkout_giftcard-txt-color" name="checkout_giftcard-txt-color" class="color" value="#000000"/>
+      </td>
+      <th><label for="checkout_giftcard-bg-color">Gift Card Background Color</label></th>
+      <td colspan="1">
+        <input type="text" id="checkout_giftcard-bg-color" name="checkout_giftcard-bg-color" class="color" value="#ffffff"/>
+      </td>
+    </tr>
+
+
+    <tr>
+      <th><label for="checkout_discount-link-size">Discount Font Size</label></th>
+      <td colspan="1">
+        <input type="text" id="checkout_discount-link-size" name="checkout_discount-link-size" value="inherit"/>
+      </td>
+    </tr>
+    
+    <tr>
+      <th><label for="checkout_discount-link-color">Discount Link Color</label></th>
+      <td colspan="1">
+        <input type="text" id="checkout_discount-link-color" name="checkout_discount-link-color" class="color" value="#000000"/>
+      </td>
+      <th><label for="checkout_discount-link-hover-color">Discount Link Hover Color</label></th>
+      <td colspan="1">
+        <input type="text" id="checkout_discount-link-hover-color" name="checkout_discount-link-hover-color" class="color" value="#000000"/>
+      </td>
+      <th><label for="checkout_discount-bg-color">Discount Background Color</label></th>
+      <td colspan="1">
+        <input type="text" id="checkout_discount-bg-color" name="checkout_discount-bg-color" class="color" value="#ffffff"/>
+      </td>
+    </tr>
+
     <tr>
       <td colspan="6"><h3 class="heading">Custom CSS <span class="note">All that you can't eat</span></h3></td>
     </tr>

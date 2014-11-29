@@ -134,6 +134,15 @@ $fallback_selection-color : #FFFFFF;
 /* currency bg color */					$checkout_payment-due-currency-bg-color:{{ settings.checkout_payment-due-currency-bg-color }};
 /* currency color	 */					$checkout_payment-due-currency-color:{{ settings.checkout_payment-due-currency-color }};
 /* Currency Font Size */				$checkout_payment-due-currency-font-size:{{ settings.checkout_payment-due-currency-font-size }};
+/*================================== GIFT CARDS AND DISCOUNTS ==================================*/
+/* Gift Cards Font Size */				$checkout_giftcard-font-size:{{ settings.checkout_giftcard-font-size }};
+/* Gift Cards Background Color */		$checkout_giftcard-bg-color:{{ settings.checkout_giftcard-bg-color }};
+/* Gift Cards Text Color */				$checkout_giftcard-txt-color:{{ settings.checkout_giftcard-txt-color }};
+/* Gift Cards Text Transform */			$checkout_giftcard-txt-transform:{{ settings.checkout_giftcard-txt-transform }};
+/* Discount Background Color */			$checkout_discount-bg-color:{{ settings.checkout_discount-bg-color }};
+/* Discount Link Size */				$checkout_discount-link-size:{{ settings.checkout_discount-link-size }};
+/* Discount Link Color */				$checkout_discount-link-color:{{ settings.checkout_discount-link-color }};
+/* Discount link Hover Color */			$checkout_discount-link-hover-color:{{ settings.checkout_discount-link-hover-color }};
 /*==============================LAYOUT VARS ==============================================/*
 /* header background color*/			$checkout_header-background-color:{{ settings.checkout_header-background-color }};
 /* header wrap background color */		$checkout_header-wrap-background-color:{{ settings.checkout_header-wrap-background-color }};
@@ -795,6 +804,54 @@ td strong{font-weight:500;color:#777}
 .order-summary__section{padding:1.5em;border-top:1px $checkout_border-style $checkout_order-summary-border-color;}
 .order-summary__section:first-child{border-top:none}
 .summary-body{border-top:1px $checkout_border-style $checkout_order-summary-border-color;}
+
+{% if settings.checkout_show_giftcard_msg != blank %}
+/* Gift Cards Custom Messaging */
+#gift-card,.current-step-contact_information .call-to-action:before{
+	display: block;
+	text-align: center;
+	padding: 1.5rem;
+	font-size: $checkout_giftcard-font-size;
+	text-transform: $checkout_giftcard-txt-transform;
+	background: $checkout_giftcard-bg-color;
+	border: 1px $checkout_border-style $checkout_order-summary-border-color;
+    border-radius: $checkout_border-radius;
+}
+
+.current-step-contact_information .call-to-action:before{
+	margin: 1.5rem 0;
+    width: auto;
+	clear: both;
+    float: none;
+   	white-space: pre-wrap;
+    color: $checkout_giftcard-txt-color;
+    content: "{{ settings.checkout_giftcard-msg | strip }}";
+}
+
+@media all and (max-width: 599px){
+	.current-step-contact_information .call-to-action:before{
+	    margin: 1.5rem;
+	}
+}
+
+
+
+{% endif %}
+
+/*Discount Code Custom Styles */
+#discount{
+	background: $checkout_discount-bg-color;
+}
+
+#discount a{
+	font-size: $checkout_discount-link-size;
+	color: $checkout_discount-link-color;
+}
+
+#discount a:hover{
+	color: $checkout_discount-link-hover-color;
+}
+
 
 .product-list .product{padding:1.125em 0}
 .product-list .product__image{margin-left:-6em;margin-right:0}
