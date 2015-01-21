@@ -1,92 +1,88 @@
-User-Configurable Shopify Responsive Checkout
-=============================================
-Reset for the new Shopify Responsive Checkout Styles and extension to provide configuration panel via Theme Settings
-<p>Before attempting the customizations below, ensure that you have <strong><a href="/manual/configuration/store-customization/page-specific/checkout-page/how-to-upgrade-to-responsive-checkout">upgraded to Responsive Checkout</a></strong>.</p>
-<a href="http://www.shopify.com/blog/15714308-introducing-responsive-checkout">The New Responsive Checkout from Shopify</a> 
-is doubtlessly a big step towards for the Shopify Platform. 
+# User-Configurable Shopify Checkout CSS
+## Enhanced Responsive Checkout Settings
 
-<p>This is a Master Reset for your Shopify Checkout Styles, substituting the default Checkout settings in the configuration panel, giving you many more customizable options to match your template! The Shopify Checkout reset makes it easy for you to add design customizations on the <strong>Customize theme</strong> page of your admin without any knowledge of HTML, CSS, or Javascript.</p>
+These files constitute a reset for and enhancement of the new Shopify Responsive Checkout styles, to provide configuration of fonts, colors and layout via Shopify's Theme Settings admin panel.
 
-<h1>Reset Options :: Unleashed.</h1>
+Before attempting the customizations below, ensure that you have [upgraded to Shopify's Responsive Checkout](http://docs.shopify.com/manual/configuration/store-customization/page-specific/checkout-page/how-to-upgrade-to-responsive-checkout)
 
-<ul>
-<li>Checkout Settings : Unleashed Configure the new Responsive Checkout of shopify, all you can eat.</li>
-<li>Base Font Size : Insert a value that matches your shop's general configuration</li>
-<li>Border Style : Border Radius Border Radius values for inputs and buttons</li>
-<li>Desktop View: Max width Insert a value that matches your shop's general configuration </li>	
-<li>Desktop View: Padding Value for the External Wrap configure the outermost padding value </li>	
-<li>Wrap Background Color</li>
-<li>Center Header Elements : Choose between a center-aligned layout or a left-aligned one </li>	
-<li>Different Background Colors for Header, Main and Footer Area </li>
-<li>Header Padding </li>
-<li>Header Margin</li>
-<li>Shop Name ( Company Logo ) Choose between uploading a custom Image or using plain text 	</li>
-<li>Shop Logo Image : max width</li>
-<li>Shop Name Text Color (In the case no image is used for the Shop Logo)</li>
-<li>Header background : Choose between using a custom image (repeating and seamless motif) or using a flat color as a background for the header area 	</li>
-<li>Custom Header Background Image </li>
-<li>Header Background Color </li>
-<li>Tagline Add an explanatory/prompt line on the header </li>	
-<li>Tagline Color</li>
-<li>Tagline Font Size</li>
-<li>Headings Color</li>
-<li>Headings Text Transform 	</li>
-<li>Headings Padding</li>
-<li>h1 + h2 font Size 	</li>
-<li>h3 + h4 Font Size 	</li>
-<li>h5 + h6 Font Size</li>
-<li>Main Background Color</li>
-<li>Section Border Color : separating the distinct section between customer info, shipping and billing</li>
-<li>Label Color 	</li>
-<li>Placeholder Color</li>
-<li>Fieldset Background Color 	</li>
-<li>Fieldset Border Color</li>
-<li>Field Focus Color 	</li>
-<li>Field Padding</li>
-<li>Field Error : Background Color 	</li>
-<li>Field Error : Text Color</li>
-<li>Field Error : Label 	</li>
-<li>Field Error : Placeholder</li>
-<li>Order Summary : Background colorfill 	</li>
-<li>Order Summary : Text Color 	</li>
-<li>Order Summary : Border Color</li>
-<li>Price Color 	</li>
-<li>Price Font size</li>
-<li>Currency Color 	</li>
-<li>Currency Background Color Fill 	</li>
-<li>Currency Font Size</li>
-<li>Button Font Size 	</li>
-<li>Button Padding 	</li>
-<li>Button Text Transform</li>
-<li>Button Focus : Background Color 	</li>
-<li>Button Focus : Text Color</li>
-<li>Inset Checkout Buttons : Changes section, discount and gift card button</li>
-<li>Inset Buttons Font Size 	</li>
-<li>Inset Buttons Top Position 	</li>
-<li>Inset Buttons Padding</li>
-<li>Inset Buttons : Background Color </li>	
-<li>Inset Buttons : Color</li>
-<li>Inset Buttons : Hover State Background Color </li>	
-<li>Inset Buttons : Hover State Color</li>
-<li>Footer Text Transform 	</li>
-<li>Footer Link Separator : Add a symbol that you wish to be displayed in-between the footer's navigation links (e.g. "|") 	</li>
-<li>Footer Top-border Color</li>
-<li>Footer Font Size 	</li>
-<li>Footer Padding 	</li>
-<li>Footer Text Color</li>
-<li>Footer Background Color Fill 	</li>
-<li>Footer Wrap Background Color</li>
-<li>Footer Link Color</li>
-<li>Footer Link Hover Color</li>
-<li>Custom CSS area</li>
-</ul>
+### Unleashed Options
 
+* Checkout Settings : Unleashed Configure the new Responsive Checkout of shopify, all you can eat.
+* Base Font Size : Insert a value that matches your shop's general configuration
+* Border Style : Border Radius Border Radius values for inputs and buttons
+* Desktop View: Max width Insert a value that matches your shop's general configuration 	
+* Desktop View: Padding Value for the External Wrap configure the outermost padding value 	
+* Wrap Background Color
+* Center Header Elements : Choose between a center-aligned layout or a left-aligned one 	
+* Different Background Colors for Header, Main and Footer Area 
+* Header Padding 
+* Header Margin
+* Shop Name ( Company Logo ) Choose between uploading a custom Image or using plain text 	
+* Shop Logo Image : max width
+* Shop Name Text Color (In the case no image is used for the Shop Logo)
+* Header background : Choose between using a custom image (repeating and seamless motif) or using a flat color as a background for the header area 	
+* Custom Header Background Image 
+* Header Background Color 
+* Tagline Add an explanatory/prompt line on the header 	
+* Tagline Color
+* Tagline Font Size
+* Headings Color
+* Headings Text Transform 	
+* Headings Padding
+* h1 + h2 font Size 	
+* h3 + h4 Font Size 	
+* h5 + h6 Font Size
+* Main Background Color
+* Section Border Color : separating the distinct section between customer info, shipping and billing
+* Label Color 	
+* Placeholder Color
+* Fieldset Background Color 	
+* Fieldset Border Color
+* Field Focus Color 	
+* Field Padding
+* Field Error : Background Color 	
+* Field Error : Text Color
+* Field Error : Label 	
+* Field Error : Placeholder
+* Order Summary : Background colorfill 	
+* Order Summary : Text Color 	
+* Order Summary : Border Color
+* Price Color 	
+* Price Font size
+* Currency Color 	
+* Currency Background Color Fill 	
+* Currency Font Size
+* Button Font Size 	
+* Button Padding 	
+* Button Text Transform
+* Button Focus : Background Color 	
+* Button Focus : Text Color
+* Inset Checkout Buttons : Changes section, discount and gift card button
+* Inset Buttons Font Size 	
+* Inset Buttons Top Position 	
+* Inset Buttons Padding
+* Inset Buttons : Background Color 	
+* Inset Buttons : Color
+* Inset Buttons : Hover State Background Color 	
+* Inset Buttons : Hover State Color
+* Footer Text Transform 	
+* Footer Link Separator : Add a symbol that you wish to be displayed in-between the footer's navigation links (e.g. "|") 	
+* Footer Top-border Color
+* Footer Font Size 	
+* Footer Padding 	
+* Footer Text Color
+* Footer Background Color Fill 	
+* Footer Wrap Background Color
+* Footer Link Color
+* Footer Link Hover Color
+* Custom CSS area
 
-<h2>Use:</h2>
-<ol>
-<li>Copy the "assets" folder to your Shopify theme. checkout.scss.liquid will reset the native scss file Shopify delivers. This action will ONLY affect your checkout page</li>
-<li> Copy the new fieldset contained on the config/settings.html and paste it on your own settings.html file. This action will substitute the default "Checkout" panel with the "Checkout unleashed" one. 
+### Usage
+
+* Place contents of `assets` folder to your Shopify theme. `checkout.scss.liquid` will reset the native SCSS file that Shopify delivers. (This action will ONLY affect your checkout pages)
+* Copy the new `fieldset` element and its contents within `config/settings.html` into your own `settings.html` file. (This action will substitute the default _Checkout_ tab)
 </ol>
 
-<h2>Extension Compatibility</h2>
-Made to seamlessly integrate with <a href="https://github.com/rickydazla/Tricky3eme">Tricky3eme</a> , but it can also work as a stand-alone extension on any Shopify theme. 
+### Compatibility
+
+Made to seamlessly integrate with [Tricky3eme](https://github.com/rickydazla/Tricky3eme) and will work on any other Shopify theme too. 
