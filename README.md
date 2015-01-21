@@ -7,7 +7,6 @@ Before attempting the customizations below, ensure that you have [upgraded to Sh
 
 ### Unleashed Options
 
-* Checkout Settings : Unleashed Configure the new Responsive Checkout of shopify, all you can eat.
 * Base Font Size : Insert a value that matches your shop's general configuration
 * Border Style : Border Radius Border Radius values for inputs and buttons
 * Desktop View: Max width Insert a value that matches your shop's general configuration 	
