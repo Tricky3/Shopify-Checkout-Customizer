@@ -1,0 +1,670 @@
+[
+  {
+    "name": "Checkout Settings : Unleashed",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Configure the new Responsive Checkout of shopify, all you can eat."
+      },
+      {
+        "type": "header",
+        "content": "Global Settings Affects just about everything"
+      },
+      {
+        "type": "text",
+        "id": "checkout_base-font-size",
+        "label": "Base Font Size",
+        "default": "13px",
+        "info": "Insert a value that matches your shop's general configuration"
+      },
+      {
+        "type": "select",
+        "id": "checkout_border-style",
+        "label": "Border Style",
+        "options": [
+          {
+            "value": "none",
+            "label": "none"
+          },
+          {
+            "value": "dotted",
+            "label": "dotted"
+          },
+          {
+            "value": "solid",
+            "label": "solid"
+          },
+          {
+            "value": "capitalize",
+            "label": "dashed"
+          }
+        ],
+        "default": "solid"
+      },
+      {
+        "type": "text",
+        "id": "checkout_border-radius",
+        "label": "Border Radius",
+        "default": "0",
+        "info": "Border Radius values for inputs and buttons"
+      },
+      {
+        "type": "header",
+        "content": "Desktop View: Color Scheme and Layout settings Header, Main and Footer Configurations (Dsktop View)"
+      },
+      {
+        "type": "text",
+        "id": "checkout_desktop-wrap",
+        "label": "Wrapped Area: Max width",
+        "default": "1060px",
+        "info": "Insert a value that matches your shop's general configuration"
+      },
+      {
+        "type": "text",
+        "id": "checkout_desktop-wrap-padding",
+        "label": "Wrapped Area : Padding",
+        "default": "0 2%",
+        "info": "configure the outermost padding value"
+      },
+      {
+        "type": "text",
+        "id": "checkout_header-padding",
+        "label": "Header Padding",
+        "default": "12px 0",
+        "info": "Padding Value for the entire Header Area"
+      },
+      {
+        "type": "text",
+        "id": "checkout_header-margin",
+        "label": "Header Wrap Margin",
+        "default": "0",
+        "info": "Margins for the Header's Wrapped Area"
+      },
+      {
+        "type": "text",
+        "id": "checkout_footer-padding",
+        "label": "Footer Padding",
+        "default": "1.5em",
+        "info": "Padding Value for the entire Footer Area"
+      },
+      {
+        "type": "text",
+        "id": "checkout_footer-fake-margin",
+        "label": "Footer Wrap Margin",
+        "default": "0",
+        "info": "Margins for the Footer's Wrapped Area"
+      },
+      {
+        "type": "color",
+        "id": "checkout_header-background-color",
+        "label": "Header Background Color Fill",
+        "default": "#ffffff",
+        "info": "Colorfills the entire header area"
+      },
+      {
+        "type": "color",
+        "id": "checkout_header-wrap-background-color",
+        "label": "Header Background Color Fill",
+        "default": "#ffffff",
+        "info": "Colorfills the external Container of the header area"
+      },
+      {
+        "type": "color",
+        "id": "checkout_main-bg-color",
+        "label": "Main Background Color",
+        "default": "#FFFFFF",
+        "info": "Colorfills the entire area for the Main Part of the Layout"
+      },
+      {
+        "type": "color",
+        "id": "checkout_wrap-bg-color",
+        "label": "Main Wrap Background Color",
+        "default": "#ffffff",
+        "info": "Colorfills the external Container for the Main Part of the Layout"
+      },
+      {
+        "type": "color",
+        "id": "checkout_footer-bg-color",
+        "label": "Footer Background Color Fill",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "checkout_footer-wrap-bg-color",
+        "label": "Footer Wrap Background Color",
+        "default": "#e5e5e5"
+      },
+      {
+        "type": "header",
+        "content": "Header Uppermost section of the Checkout Page"
+      },
+      {
+        "type": "checkbox",
+        "id": "checkout_center_header_elems",
+        "label": "Center Header Elements",
+        "info": "Choose between a center-aligned layout or a left-aligned one"
+      },
+      {
+        "type": "select",
+        "id": "checkout_logo",
+        "label": "Shop Name ( Company Logo )",
+        "options": [
+          {
+            "value": "",
+            "label": "No image, just text"
+          },
+          {
+            "value": "checkout_logo.png",
+            "label": "Use a custom image"
+          }
+        ],
+        "default": "",
+        "info": "Choose between uploading a custom Image or using plain text"
+      },
+      {
+        "type": "image",
+        "id": "checkout_logo.png",
+        "label": "Custom Shop Name Image",
+        "info": "For best results, we recommend uploading a transparent background image."
+      },
+      {
+        "type": "text",
+        "id": "checkout_shop-name-max-width",
+        "label": "Shop Name Image Max Width",
+        "default": "200px",
+        "info": "Prepare your logo for retina-display enabled devices"
+      },
+      {
+        "type": "color",
+        "id": "checkout_shop-name-color",
+        "label": "Shop Name Text Color",
+        "default": "#ffffff",
+        "info": "In the case no image is used for the Shop Logo"
+      },
+      {
+        "type": "select",
+        "id": "checkout_header_bg",
+        "label": "Header background",
+        "options": [
+          {
+            "value": "",
+            "label": "No image, just flat color"
+          },
+          {
+            "value": "checkout_header_bg.png",
+            "label": "Use a custom image"
+          }
+        ],
+        "default": "",
+        "info": "Choose between using a custom image (repeating and seamless motif) or using a flat color as a background for the header area"
+      },
+      {
+        "type": "image",
+        "id": "checkout_header_bg.png",
+        "label": "Custom Header Background Image",
+        "info": "For best results, we recommend uploading a seamless motif image."
+      },
+      {
+        "type": "text",
+        "id": "checkout_headline",
+        "label": "Tagline",
+        "info": "Add an explanatory\/prompt line on the header"
+      },
+      {
+        "type": "text",
+        "id": "checkout_shop-desc-font-size",
+        "label": "Tagline Font Size",
+        "default": ".8em"
+      },
+      {
+        "type": "color",
+        "id": "checkout_shop-desc-color",
+        "label": "Tagline Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Headings (h1, h2, h3, h4, h5, h6)"
+      },
+      {
+        "type": "color",
+        "id": "checkout_headings-color",
+        "label": "Headings Color",
+        "default": "#d8d8d8"
+      },
+      {
+        "type": "select",
+        "id": "checkout_heading-text-transform",
+        "label": "Headings Text Transform",
+        "options": [
+          {
+            "value": "none",
+            "label": "none"
+          },
+          {
+            "value": "uppercase",
+            "label": "uppercase"
+          },
+          {
+            "value": "lowercase",
+            "label": "lowercase"
+          },
+          {
+            "value": "capitalize",
+            "label": "capitalize"
+          }
+        ],
+        "default": "uppercase"
+      },
+      {
+        "type": "text",
+        "id": "checkout_heading-padding",
+        "label": "Headings Padding",
+        "default": "0 0 10px 0"
+      },
+      {
+        "type": "text",
+        "id": "checkout_h1-font-size",
+        "label": "h1 + h2 font Size",
+        "default": "24px"
+      },
+      {
+        "type": "text",
+        "id": "checkout_h3-font-size",
+        "label": "h3 + h4 Font Size",
+        "default": "16px"
+      },
+      {
+        "type": "text",
+        "id": "checkout_h5-font-size",
+        "label": "h5 + h6 Font Size",
+        "default": "13px"
+      },
+      {
+        "type": "header",
+        "content": "Main Section Where all the oder info and actions reside"
+      },
+      {
+        "type": "color",
+        "id": "checkout_section-border-color",
+        "label": "Section Border Color",
+        "default": "#e5e5e5",
+        "info": "separating the distinct section between customer info, shipping and billing"
+      },
+      {
+        "type": "header",
+        "content": "Form Settings Style your user Input"
+      },
+      {
+        "type": "color",
+        "id": "checkout_label-color",
+        "label": "Label Color",
+        "default": "#777"
+      },
+      {
+        "type": "color",
+        "id": "checkout_placeholder-color",
+        "label": "Placeholder Color",
+        "default": "#777"
+      },
+      {
+        "type": "color",
+        "id": "checkout_fieldset-bg-color",
+        "label": "Fieldset Background Color",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "checkout_fieldset-border-color",
+        "label": "Fieldset Border Color",
+        "default": "#d8d8d8"
+      },
+      {
+        "type": "color",
+        "id": "checkout_field_focus-color",
+        "label": "Field Focus Color",
+        "default": "#6d6f71"
+      },
+      {
+        "type": "text",
+        "id": "checkout_field-padding",
+        "label": "Field Padding",
+        "default": "1em"
+      },
+      {
+        "type": "color",
+        "id": "checkout_field-error-bg-color",
+        "label": "Field Error : Background Color",
+        "default": "#fff7f7"
+      },
+      {
+        "type": "color",
+        "id": "checkout_field-error-color",
+        "label": "Field Error : Color",
+        "default": "#fff7f7"
+      },
+      {
+        "type": "color",
+        "id": "checkout_field-error-label-color",
+        "label": "Field Error : Label",
+        "default": "#fff7f7"
+      },
+      {
+        "type": "color",
+        "id": "checkout_field-error-placeholder-color",
+        "label": "Field Error : Placeholder",
+        "default": "#fff7f7"
+      },
+      {
+        "type": "header",
+        "content": "Order Summary Right side of the checkout"
+      },
+      {
+        "type": "color",
+        "id": "checkout_order-summary-background-color",
+        "label": "Order Summary : Background colorfill",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "checkout_order-summary-color",
+        "label": "Order Summary : Text Color",
+        "default": "#6d6f71"
+      },
+      {
+        "type": "color",
+        "id": "checkout_order-summary-border-color",
+        "label": "Order Summary : Border Color",
+        "default": "#dadada"
+      },
+      {
+        "type": "header",
+        "content": "Payment Due Currency and Price Configuration"
+      },
+      {
+        "type": "color",
+        "id": "checkout_payment-due-color",
+        "label": "Price Color",
+        "default": "#000"
+      },
+      {
+        "type": "text",
+        "id": "checkout_payment-due-font-size",
+        "label": "Price Font size",
+        "default": "1.4em"
+      },
+      {
+        "type": "color",
+        "id": "checkout_payment-due-currency-color",
+        "label": "Currency Color",
+        "default": "#999"
+      },
+      {
+        "type": "color",
+        "id": "checkout_payment-due-currency-bg-color",
+        "label": "Currency Background Color Fill",
+        "default": "#fff"
+      },
+      {
+        "type": "text",
+        "id": "checkout_payment-due-currency-font-size",
+        "label": "Currency Font Size",
+        "default": "1.4em"
+      },
+      {
+        "type": "header",
+        "content": "Checkout Buttons Look for \"Base Styles\" settings for additional settings"
+      },
+      {
+        "type": "text",
+        "id": "checkout_btn-font-size",
+        "label": "Button Font Size",
+        "default": "13px"
+      },
+      {
+        "type": "text",
+        "id": "checkout_btn-padding",
+        "label": "Button Padding",
+        "default": "1em"
+      },
+      {
+        "type": "select",
+        "id": "checkout_btn-text-transform",
+        "label": "Button Text Transform",
+        "options": [
+          {
+            "value": "none",
+            "label": "none"
+          },
+          {
+            "value": "uppercase",
+            "label": "uppercase"
+          },
+          {
+            "value": "lowercase",
+            "label": "lowercase"
+          },
+          {
+            "value": "capitalize",
+            "label": "capitalize"
+          }
+        ],
+        "default": "uppercase"
+      },
+      {
+        "type": "color",
+        "id": "checkout_btn-focus-bg-color",
+        "label": "Button Focus : Background Color"
+      },
+      {
+        "type": "color",
+        "id": "checkout_btn-focus-color",
+        "label": "Button Focus : Text Color"
+      },
+      {
+        "type": "header",
+        "content": "Inset Checkout Buttons Changes section, discount and gift card button"
+      },
+      {
+        "type": "text",
+        "id": "checkout_btn-inset-font-size",
+        "label": "Inset Buttons Font Size",
+        "default": "12px"
+      },
+      {
+        "type": "text",
+        "id": "checkout_btn-inset-top-position",
+        "label": "Inset Buttons Top Position",
+        "default": "8px"
+      },
+      {
+        "type": "text",
+        "id": "checkout_btn-inset-padding",
+        "label": "Inset Buttons Padding",
+        "default": ".8em"
+      },
+      {
+        "type": "color",
+        "id": "checkout_btn-inset-bg-color",
+        "label": "Inset Buttons : Background Color",
+        "default": "#2a9dcc"
+      },
+      {
+        "type": "color",
+        "id": "checkout_btn-inset-color",
+        "label": "Inset Buttons : Color",
+        "default": "#2a9dcc"
+      },
+      {
+        "type": "color",
+        "id": "checkout_btn-inset-hover-bg-color",
+        "label": "Inset Buttons : Hover State Background Color",
+        "default": "#2a9dcc"
+      },
+      {
+        "type": "color",
+        "id": "checkout_btn-inset-hover-color",
+        "label": "Inset Buttons : Hover State Color",
+        "default": "#2a9dcc"
+      },
+      {
+        "type": "header",
+        "content": "Footer Lowermost Part of the Layout"
+      },
+      {
+        "type": "select",
+        "id": "checkout_footer-text-transform",
+        "label": "Footer Text Transform",
+        "options": [
+          {
+            "value": "none",
+            "label": "none"
+          },
+          {
+            "value": "uppercase",
+            "label": "uppercase"
+          },
+          {
+            "value": "lowercase",
+            "label": "lowercase"
+          },
+          {
+            "value": "capitalize",
+            "label": "capitalize"
+          }
+        ],
+        "default": "none"
+      },
+      {
+        "type": "text",
+        "id": "checkout_footer-link-separator",
+        "label": "Footer Link Separator",
+        "info": "Add a symbol that you wish to be displayed in-between the footer's navigation links (e.g. \"|\")"
+      },
+      {
+        "type": "color",
+        "id": "checkout_footer-top-border-color",
+        "label": "Footer Top-border Color",
+        "default": "#e5e5e5"
+      },
+      {
+        "type": "text",
+        "id": "checkout_footer-font-size",
+        "label": "Footer Font Size",
+        "default": "11px"
+      },
+      {
+        "type": "color",
+        "id": "checkout_footer-text-color",
+        "label": "Footer Text Color",
+        "default": "#999"
+      },
+      {
+        "type": "color",
+        "id": "checkout_footer-href-color",
+        "label": "Footer Link Color",
+        "default": "#999"
+      },
+      {
+        "type": "color",
+        "id": "checkout_footer-href-hover-color",
+        "label": "Footer Link Hover Color",
+        "default": "#2486ae"
+      },
+      {
+        "type": "header",
+        "content": "Gift Cards and Discounts Settings Add to the visibility of these Features during your checkout"
+      },
+      {
+        "type": "checkbox",
+        "id": "checkout_show_giftcard_msg",
+        "label": "Gift Cards Notice ,right from the start",
+        "info": "Display a gift card notice during the first step of the checkout process"
+      },
+      {
+        "type": "text",
+        "id": "checkout_giftcard-msg",
+        "label": "Gift Card Message",
+        "default": "Have a Gift Card\\003F\\A\\A You\\'ll have an opportunity to enter your Gift Card code next during Checkout.",
+        "info": "Tip: include newlines in the generated content by writing the \"\\A\" escape sequence.Add a questionmark by using \"\\003F\"."
+      },
+      {
+        "type": "select",
+        "id": "checkout_giftcard-txt-transform",
+        "label": "Gift Card Text Transform",
+        "options": [
+          {
+            "value": "none",
+            "label": "none"
+          },
+          {
+            "value": "uppercase",
+            "label": "uppercase"
+          },
+          {
+            "value": "lowercase",
+            "label": "lowercase"
+          },
+          {
+            "value": "capitalize",
+            "label": "capitalize"
+          }
+        ],
+        "default": "none"
+      },
+      {
+        "type": "text",
+        "id": "checkout_giftcard-font-size",
+        "label": "Gift Card Font Size",
+        "default": "13px"
+      },
+      {
+        "type": "color",
+        "id": "checkout_giftcard-txt-color",
+        "label": "Gift Card Text Color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "checkout_giftcard-bg-color",
+        "label": "Gift Card Background Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "text",
+        "id": "checkout_discount-link-size",
+        "label": "Discount Font Size",
+        "default": "inherit"
+      },
+      {
+        "type": "color",
+        "id": "checkout_discount-link-color",
+        "label": "Discount Link Color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "checkout_discount-link-hover-color",
+        "label": "Discount Link Hover Color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "checkout_discount-bg-color",
+        "label": "Discount Background Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Custom CSS All that you can't eat"
+      },
+      {
+        "type": "textarea",
+        "id": "checkout_custom_css",
+        "label": "Insert your custom magic here",
+        "info": "Leave empty if u ain't an adult"
+      }
+    ],
+    "overrides-section": "checkout"
+  }
+]

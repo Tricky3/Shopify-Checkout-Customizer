@@ -79,8 +79,7 @@ Before attempting the customizations below, ensure that you have [upgraded to Sh
 ### Usage
 
 * Place contents of `assets` folder to your Shopify theme. `checkout.scss.liquid` will reset the native SCSS file that Shopify delivers. (This action will ONLY affect your checkout pages)
-* Copy the new `fieldset` element and its contents within `config/settings.html` into your own `settings.html` file. (This action will substitute the default _Checkout_ tab)
-</ol>
+* Copy the new nodes from `config/settings_schema.json` into your own theme settings file of the same name. (This action will substitute the default _Checkout_ tab)
 
 ### Compatibility
 
